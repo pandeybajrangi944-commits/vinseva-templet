@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latest News Feed | The Daily Chronicle</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top sticky">
+        <div class="container">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">World News</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">Editorial</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="menu.html">Latest Feed</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Connect</a></li>
+                </ul>
+            </div>
+            <a class="navbar-brand mx-auto fw-bold text-dark" href="index.html">
+                THE DAILY CHRONICLE<br><small class="fw-normal text-muted" style="font-size: 10px; display: block; margin-top: -5px; text-align: center;">Truth. Integrity. Excellence.</small>
+            </a>
+            <div class="d-flex align-items-center gap-4">
+                <a href="#" class="text-dark"><i class="fas fa-search"></i></a>
+                <a href="contact.html" class="btn btn-accent rounded-pill px-4">Subscribe</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Banner -->
+    <header class="hero-section text-center" style="padding: 180px 0 100px;">
+        <div class="container">
+            <span class="hero-badge">NEWS FEED</span>
+            <h1 class="hero-title mb-3">Latest <span class="text-accent">Updates</span></h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb justify-content-center">
+                    <li class="breadcrumb-item"><a href="index.html" class="text-dark text-decoration-none">Home</a></li>
+                    <li class="breadcrumb-item active text-accent fw-bold" aria-current="page">Latest Feed</li>
+                </ol>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Blog / News Grid -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row g-4">
+                <!-- News Item 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="course-card h-100">
+                        <div class="course-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=400" alt="Tech" class="img-fluid w-100">
+                        </div>
+                        <div class="p-4">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="course-category-badge">Science & Tech</span>
+                                <span class="small text-muted">April 25, 2026</span>
+                            </div>
+                            <h5 class="fw-bold mb-3">Quantum Computing: A New Era of Cryptography Begins</h5>
+                            <p class="text-muted small">Researchers unveil the first commercially viable quantum processor, promising to revolutionize data security and complex problem-solving.</p>
+                            <hr>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="d-flex align-items-center gap-2">
+                                    <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=400" class="rounded-circle" style="width: 30px; height: 30px; object-fit: cover;" alt="Author">
+                                    <span class="small fw-bold">By John Doe</span>
+                                </div>
+                                <a href="#" class="text-accent small fw-bold text-decoration-none">Read Article</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- News Item 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="course-card h-100">
+                        <div class="course-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=400" alt="Economy" class="img-fluid w-100">
+                        </div>
+                        <div class="p-4">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="course-category-badge">Economy</span>
+                                <span class="small text-muted">April 24, 2026</span>
+                            </div>
+                            <h5 class="fw-bold mb-3">Global Trade Routes Shift as Arctic Passage Opens</h5>
+                            <p class="text-muted small">Decreasing ice levels lead to new maritime opportunities, potentially shortening shipping times between Europe and Asia by 40%.</p>
+                            <hr>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="d-flex align-items-center gap-2">
+                                    <img src="https://images.unsplash.com/photo-1444653300331-59f635f7957c?auto=format&fit=crop&q=80&w=400" class="rounded-circle" style="width: 30px; height: 30px; object-fit: cover;" alt="Author">
+                                    <span class="small fw-bold">By Jane Smith</span>
+                                </div>
+                                <a href="#" class="text-accent small fw-bold text-decoration-none">Read Article</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- News Item 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="course-card h-100">
+                        <div class="course-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&q=80&w=400" alt="Health" class="img-fluid w-100">
+                        </div>
+                        <div class="p-4">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="course-category-badge">Health</span>
+                                <span class="small text-muted">April 24, 2026</span>
+                            </div>
+                            <h5 class="fw-bold mb-3">Personalized Medicine: DNA-Based Treatments Go Mainstream</h5>
+                            <p class="text-muted small">New regulatory approvals pave the way for tailored healthcare solutions based on individual genetic profiles.</p>
+                            <hr>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="d-flex align-items-center gap-2">
+                                    <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=50" class="rounded-circle" style="width: 30px; height: 30px; object-fit: cover;" alt="Author">
+                                    <span class="small fw-bold">By David Chen</span>
+                                </div>
+                                <a href="#" class="text-accent small fw-bold text-decoration-none">Read Article</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- News Item 4 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="course-card h-100">
+                        <div class="course-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?auto=format&fit=crop&q=80&w=400" alt="Urban" class="img-fluid w-100">
+                        </div>
+                        <div class="p-4">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="course-category-badge">Society</span>
+                                <span class="small text-muted">April 23, 2026</span>
+                            </div>
+                            <h5 class="fw-bold mb-3">The Future of Urban Living: Vertical Forests in Every City</h5>
+                            <p class="text-muted small">Metropolises worldwide adopt the 'Green Towers' initiative to combat urban heat islands and improve air quality.</p>
+                            <hr>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="d-flex align-items-center gap-2">
+                                    <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=50" class="rounded-circle" style="width: 30px; height: 30px; object-fit: cover;" alt="Author">
+                                    <span class="small fw-bold">By Elena R.</span>
+                                </div>
+                                <a href="#" class="text-accent small fw-bold text-decoration-none">Read Article</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- News Item 5 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="course-card h-100">
+                        <div class="course-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=400" alt="Finance" class="img-fluid w-100">
+                        </div>
+                        <div class="p-4">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="course-category-badge">Business</span>
+                                <span class="small text-muted">April 23, 2026</span>
+                            </div>
+                            <h5 class="fw-bold mb-3">Decentralized Finance: Reforming the Global Banking System</h5>
+                            <p class="text-muted small">As digital assets mature, traditional financial institutions are integrating blockchain technology to increase transparency.</p>
+                            <hr>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="d-flex align-items-center gap-2">
+                                    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=50" class="rounded-circle" style="width: 30px; height: 30px; object-fit: cover;" alt="Author">
+                                    <span class="small fw-bold">By John Doe</span>
+                                </div>
+                                <a href="#" class="text-accent small fw-bold text-decoration-none">Read Article</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- News Item 6 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="course-card h-100">
+                        <div class="course-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&q=80&w=400" alt="Work" class="img-fluid w-100">
+                        </div>
+                        <div class="p-4">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="course-category-badge">Culture</span>
+                                <span class="small text-muted">April 22, 2026</span>
+                            </div>
+                            <h5 class="fw-bold mb-3">The Remote Work Revolution: Four Years Later</h5>
+                            <p class="text-muted small">An in-depth look at how the shift to remote work has permanently altered city centers and local economies.</p>
+                            <hr>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="d-flex align-items-center gap-2">
+                                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=50" class="rounded-circle" style="width: 30px; height: 30px; object-fit: cover;" alt="Author">
+                                    <span class="small fw-bold">By Jane Smith</span>
+                                </div>
+                                <a href="#" class="text-accent small fw-bold text-decoration-none">Read Article</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <div class="mt-5 d-flex justify-content-center">
+                <nav aria-label="Page navigation">
+                    <ul class="pagination">
+                        <li class="page-item"><a class="page-link text-dark" href="#"><i class="fas fa-chevron-left small"></i></a></li>
+                        <li class="page-item active"><a class="page-link bg-accent border-accent" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link text-dark" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link text-dark" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link text-dark" href="#"><i class="fas fa-chevron-right small"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <!-- Subscription Promo -->
+    <section class="section-padding pt-0">
+        <div class="container">
+            <div class="bg-dark text-white p-5 text-center">
+                <h2 class="fw-bold mb-3" style="color: aliceblue;">Stay Informed Every Morning</h2>
+                <p class="text-secondary mx-auto mb-4" style="max-width: 600px;">Subscribe to our daily briefing and get the most important stories delivered straight to your inbox at 7:00 AM.</p>
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                        <form class="d-flex gap-2">
+                            <input type="email" class="form-control rounded-pill px-4" placeholder="Enter your email address">
+                            <button class="btn btn-accent rounded-pill px-4 fw-bold">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="border-top border-secondary pt-4 mt-5">
+                <div class="row align-items-center">
+                    <div class="col-md-6 text-center text-md-start">
+                        <p class="mb-0 text-secondary small">&copy; 2026 The Daily Chronicle. All rights reserved.</p>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <p class="mb-0 text-secondary small">Powered By <span class="text-accent fw-bold">VINSEVA</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

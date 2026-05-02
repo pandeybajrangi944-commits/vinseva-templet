@@ -1,0 +1,532 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500;600&display=swap');
+
+:root {
+    --primary-color: #2e7d32; /* Deep Forest Green */
+    --secondary-color: #8bc34a; /* Light Leaf Green */
+    --accent-color: #f57c00; /* Conservation Orange */
+    --dark-color: #1b2e1b; /* Very Dark Green for footer/text */
+    --bg-light: #f1f8e9;
+    --bg-white: #ffffff;
+    --text-dark: #1b2e1b;
+    --text-muted: #546e7a;
+    --border-radius: 12px;
+    --shadow-subtle: 0 10px 30px rgba(0, 0, 0, 0.05);
+    --section-padding-desktop: 100px;
+    --section-padding-mobile: 60px;
+    --transition-smooth: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+    position: relative;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--text-dark);
+    background-color: var(--bg-white);
+    line-height: 1.8;
+    -webkit-font-smoothing: antialiased;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: var(--bg-white);
+    letter-spacing: -0.5px;
+}
+
+a {
+    text-decoration: none;
+    transition: var(--transition-smooth);
+}
+
+/* Custom UI Elements from Image */
+.btn-primary-custom {
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 50px;
+    padding: 12px 30px;
+    font-weight: 600;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-primary-custom:hover {
+    background-color: #e44a2e;
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(255, 90, 60, 0.3);
+}
+
+.btn-secondary-custom {
+    background-color: var(--secondary-color);
+    color: white;
+    border-radius: 50px;
+    padding: 12px 30px;
+    font-weight: 600;
+    border: none;
+}
+
+.btn-secondary-custom:hover {
+    background-color: #16a085;
+    color: white;
+}
+
+.section-teal {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.section-dark {
+    background-color: var(--dark-color);
+    color: white;
+}
+
+/* Progress Bar for Charity Cards */
+.progress-container {
+    margin: 20px 0;
+}
+
+.progress {
+    height: 8px;
+    border-radius: 10px;
+    background-color: #eee;
+}
+
+.progress-bar {
+    background-color: var(--primary-color);
+}
+
+.progress-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+/* Card Styling */
+.card-custom {
+    border: none;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-subtle);
+    overflow: hidden;
+    transition: var(--transition-smooth);
+    background: white;
+}
+
+.card-custom:hover {
+    transform: translateY(-10px);
+}
+
+@media (max-width: 767.98px) {
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+    .display-3 {
+        font-size: 2.5rem !important;
+    }
+    .display-4 {
+        font-size: 2.2rem !important;
+    }
+    .section-header .title {
+        font-size: 1.8rem;
+    }
+    .cta-banner h2 {
+        font-size: 1.8rem;
+    }
+}
+
+/* Reusable Components */
+
+.section-padding {
+    padding: var(--section-padding-desktop) 0;
+}
+
+@media (max-width: 991.98px) {
+    .section-padding {
+        padding: var(--section-padding-mobile) 0;
+    }
+}
+
+.section-header {
+    margin-bottom: 50px;
+}
+
+.section-header .subtitle {
+    text-transform: uppercase;
+    color: var(--primary-color);
+    letter-spacing: 2px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.section-header .subtitle::before {
+    content: "\f004";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+}
+
+.section-header .title {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    position: relative;
+    font-weight: 800;
+}
+
+/* Navbar */
+.navbar {
+    transition: var(--transition-smooth);
+    padding: 20px 0;
+    background: white;
+}
+
+.navbar.sticky {
+    padding: 10px 0;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.nav-link {
+    font-weight: 600;
+    color: var(--dark-color) !important;
+    margin: 0 15px;
+    text-transform: capitalize;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: var(--primary-color) !important;
+}
+
+.btn-cta {
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 50px;
+    padding: 12px 30px;
+    font-weight: 700;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-cta::after {
+    content: "\f061";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+}
+
+.btn-cta:hover {
+    background-color: var(--dark-color);
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Footer */
+footer {
+    background-color: var(--dark-color);
+    color: #a5adb7;
+    padding: 80px 0 30px;
+}
+
+footer h5 {
+    color: white;
+    margin-bottom: 30px;
+}
+
+footer .footer-link {
+    color: #a5adb7;
+    display: block;
+    margin-bottom: 15px;
+    transition: var(--transition-smooth);
+}
+
+footer .footer-link:hover {
+    color: var(--primary-color);
+    padding-left: 5px;
+}
+
+footer .social-links a {
+    width: 40px;
+    height: 40px;
+    background: rgba(255,255,255,0.05);
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+footer .social-links a:hover {
+    background: var(--primary-color);
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.05);
+    padding-top: 30px;
+    margin-top: 50px;
+}
+
+/* Specific Section from Image: Volunteer Banner */
+.volunteer-banner {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 40px 0;
+}
+
+.volunteer-banner h3 {
+    color: white;
+    margin: 0;
+}
+
+/* Counter Section */
+.counter-box {
+    text-align: center;
+    color: white;
+}
+
+.counter-box i {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    opacity: 0.8;
+}
+
+.counter-box h2 {
+    color: white;
+    font-size: 3rem;
+    margin-bottom: 5px;
+}
+
+.counter-box p {
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* Hero Section */
+.hero-section {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: white;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.4));
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* Page Banner */
+.page-banner {
+    height: 350px;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: white;
+    text-align: center;
+}
+
+.page-banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7));
+}
+
+.page-banner-content {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    color: white;
+}
+
+.breadcrumb-item a {
+    color: rgba(255,255,255,0.8);
+}
+
+.breadcrumb-item.active {
+    color: white;
+}
+
+/* Cards */
+.custom-card {
+    border: none;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-subtle);
+    overflow: hidden;
+    transition: var(--transition-smooth);
+    background: var(--bg-white);
+    height: 100%;
+}
+
+.custom-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+.custom-card img {
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
+    object-fit: cover;
+    height: 250px;
+    width: 100%;
+}
+
+.card-body {
+    padding: 30px;
+}
+
+/* Image Card with Overlay (Reference Image Style) */
+.image-card-overlay {
+    position: relative;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    height: 350px;
+    box-shadow: var(--shadow-subtle);
+    transition: var(--transition-smooth);
+}
+
+.image-card-overlay:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.image-card-overlay img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-card-overlay .overlay-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 30px;
+    background: linear-gradient(transparent, rgba(0,0,0,0.9));
+    color: white;
+}
+
+.image-card-overlay .overlay-text h4 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+/* CTA Banner */
+.cta-banner {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.cta-banner h2 {
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+/* Footer */
+footer {
+    padding: 0px 2px;
+    font-size: 0.9rem;
+}
+
+/* Gallery Grid */
+.card-custom {
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--border-radius);
+    height: 100%;
+}
+
+.card-custom img {
+    transition: var(--transition-smooth);
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card-custom:hover img {
+    transform: scale(1.1);
+}
+
+.gallery-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, transparent 100%);
+    display: flex;
+    align-items: flex-end;
+    padding: 20px;
+    opacity: 0;
+    transition: var(--transition-smooth);
+}
+
+.card-custom:hover .gallery-overlay {
+    opacity: 1;
+}
+
+.gallery-overlay .badge {
+    font-size: 0.8rem;
+    padding: 8px 15px;
+    border-radius: 50px;
+}
+
+/* Form Styling */
+.form-control {
+    padding: 12px 20px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: var(--accent-color);
+}
+
+/* Icons */
+.feature-icon {
+    font-size: 2rem;
+    color: var(--accent-color);
+    margin-bottom: 15px;
+}

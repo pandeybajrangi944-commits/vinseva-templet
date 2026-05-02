@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500;600&display=swap');
+
+:root {
+    --primary-color: #ff9933; /* Saffron - Indian Flag */
+    --primary-dark: #e68a00;
+    --secondary-color: #138808; /* Green - Indian Flag */
+    --accent-color: #000080; /* Navy Blue - Ashoka Chakra */
+    --bg-light: #f4f7f6;
+    --bg-white: #ffffff;
+    --text-dark: #212529;
+    --text-muted: #6c757d;
+    --border-color: #dee2e6;
+    --border-radius: 4px;
+    --shadow-subtle: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --section-padding-desktop: 80px;
+    --section-padding-mobile: 40px;
+    --transition-smooth: all 0.3s ease;
+}
+
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+    position: relative;
+}
+
+body {
+    font-family: 'Poppins', 'Inter', sans-serif;
+    color: var(--text-dark);
+    background-color: var(--bg-white);
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #333;
+    letter-spacing: -0.2px;
+}
+
+a {
+    text-decoration: none;
+    transition: var(--transition-smooth);
+}
+
+@media (max-width: 767.98px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+    .display-3 {
+        font-size: 2.2rem !important;
+    }
+    .display-4 {
+        font-size: 2rem !important;
+    }
+    .section-header .title {
+        font-size: 1.6rem;
+    }
+    .cta-banner h2 {
+        font-size: 1.6rem;
+    }
+}
+
+/* Reusable Components */
+
+.section-padding {
+    padding: var(--section-padding-desktop) 0;
+}
+
+@media (max-width: 991.98px) {
+    .section-padding {
+        padding: var(--section-padding-mobile) 0;
+    }
+}
+
+.section-header {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.section-header .subtitle {
+    text-transform: uppercase;
+    color: var(--secondary-color);
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: 0.85rem;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.section-header .title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    position: relative;
+    text-transform: uppercase;
+    color: #333;
+}
+
+.section-header .title span {
+    color: var(--primary-color);
+}
+
+/* Navbar */
+.navbar {
+    transition: var(--transition-smooth);
+    padding: 20px 0;
+    background: #fff;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.navbar.sticky {
+    padding: 10px 0;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+}
+
+.navbar-brand {
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar-brand .logo-text {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: var(--accent-color);
+}
+
+.navbar-brand .logo-text span {
+    color: var(--primary-color);
+}
+
+.nav-link {
+    font-weight: 600;
+    color: #333 !important;
+    margin: 0 15px;
+    font-size: 0.95rem;
+    text-transform: capitalize;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: var(--primary-color) !important;
+}
+
+.btn-cta {
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: var(--border-radius);
+    padding: 12px 30px;
+    font-weight: 600;
+    border: none;
+    text-transform: uppercase;
+    box-shadow: 0 4px 10px rgba(255, 153, 51, 0.3);
+}
+
+.btn-cta:hover {
+    background-color: var(--primary-dark);
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Hero Section */
+.hero-section {
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: #333;
+    background-color: #fffaf5;
+}
+
+.hero-overlay {
+    display: none; /* Removed dark overlay as image is bright */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    text-align: left !important;
+}
+
+.hero-content .delivery-text {
+    color: var(--secondary-color);
+    background: rgba(19, 136, 8, 0.1);
+    padding: 5px 15px;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    line-height: 1.1;
+}
+
+.hero-content p {
+    color: #666;
+    max-width: 500px;
+    margin-bottom: 30px;
+}
+
+/* Product Cards */
+.custom-card {
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    box-shadow: none;
+    overflow: hidden;
+    transition: var(--transition-smooth);
+    background: var(--bg-white);
+    height: 100%;
+    text-align: left;
+}
+
+.custom-card:hover {
+    border-color: var(--primary-color);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.custom-card img {
+    border-radius: 0;
+    object-fit: contain;
+    height: 200px;
+    width: 100%;
+    padding: 20px;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-category {
+    font-size: 0.75rem;
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.card-title {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.card-price {
+    font-weight: 800;
+    color: var(--accent-color);
+    font-size: 1.1rem;
+}
+
+/* Category Icons Section */
+.category-item {
+    padding: 15px;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    transition: var(--transition-smooth);
+    text-align: center;
+    background: #fff;
+}
+
+.category-item:hover {
+    border-color: var(--primary-color);
+    background: #fdfdfd;
+}
+
+.category-item i {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.category-item h6 {
+    font-size: 0.85rem;
+    margin-bottom: 0;
+    font-weight: 600;
+}
+
+/* Promo Banners */
+.promo-banner {
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    position: relative;
+    height: 220px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    color: #fff;
+}
+
+.promo-banner h3 {
+    color: #fff;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.btn-white {
+    background: #fff;
+    color: #333;
+    border-radius: 5px;
+    padding: 8px 20px;
+    font-weight: 600;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+/* Why Choose Us Icons */
+.feature-box {
+    text-align: center;
+    padding: 20px;
+}
+
+.feature-box i {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.feature-box h5 {
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+/* Newsletter */
+.newsletter-section {
+    background-color: #f0f4f8;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.newsletter-box {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.newsletter-form .form-control {
+    border-radius: 5px 0 0 5px;
+    border: 1px solid var(--border-color);
+}
+
+.newsletter-form .btn {
+    border-radius: 0 5px 5px 0;
+}
+
+/* Footer */
+footer {
+    padding: 0px 0 0px;
+    background: #f8f9fa;
+    border-top: 1px solid var(--border-color);
+}
+
+.footer-logo {
+    margin-bottom: 20px;
+}
+
+.footer-links h5 {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.footer-links ul li a:hover {
+    color: var(--primary-color);
+}
+
+.copyright {
+    border-top: 1px solid var(--border-color);
+    padding-top: 20px;
+    margin-top: 40px;
+    font-size: 0.85rem;
+    color: #999;
+}
+
+.copyright span {
+    color: var(--primary-color);
+}

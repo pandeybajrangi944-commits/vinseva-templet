@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership Inquiries | Elite Recreation Club</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top scrolled">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <span class="fw-bold fs-3 text-primary">ELITE CLUB</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto me-4 text-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">Our Club</a></li>
+                    <li class="nav-item"><a class="nav-link" href="menu.html">Activities</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Facilities</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">Membership</a></li>
+                </ul>
+                <div class="d-flex justify-content-center">
+                    <a href="contact.html" class="btn btn-cta">Join Elite</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Banner -->
+    <header class="page-banner" style="background-image: url('https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&q=80&w=1920');">
+        <div class="container page-banner-content">
+            <h1 class="display-4 fw-bold mb-3">Join The Club</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb justify-content-center">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active text-white" aria-current="page">Membership</li>
+                </ol>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contact Info & Form -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row g-5">
+                <!-- Contact Info -->
+                <div class="col-lg-5">
+                    <div class="mb-4">
+                        <span class="subtitle">Get In Touch</span>
+                        <h2 class="title text-start">Membership Office</h2>
+                    </div>
+                    <p class="mb-5 text-muted">Ready to elevate your lifestyle? Our membership consultants are available to guide you through our tiers and give you a private tour of the facilities.</p>
+                    
+                    <div class="d-flex align-items-start mb-4">
+                        <div class="bg-primary text-white rounded-circle p-3 me-3" style="width: 50px; height: 50px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h5 class="mb-1 fw-bold">Address</h5>
+                            <p class="text-muted mb-0">789 Wellness Way, City Heights, NY</p>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex align-items-start mb-4">
+                        <div class="bg-primary text-white rounded-circle p-3 me-3" style="width: 50px; height: 50px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <h5 class="mb-1 fw-bold">Concierge</h5>
+                            <p class="text-muted mb-0">+1 800-ELITE-CLUB</p>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex align-items-start mb-4">
+                        <div class="bg-primary text-white rounded-circle p-3 me-3" style="width: 50px; height: 50px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h5 class="mb-1 fw-bold">Email Inquiries</h5>
+                            <p class="text-muted mb-0">join@eliteclub.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex align-items-start">
+                        <div class="bg-primary text-white rounded-circle p-3 me-3" style="width: 50px; height: 50px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div>
+                            <h5 class="mb-1 fw-bold">Office Hours</h5>
+                            <p class="text-muted mb-0">Mon - Sat: 9 AM - 8 PM</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Contact Form -->
+                <div class="col-lg-7">
+                    <div class="bg-white p-5 rounded-3 shadow-lg">
+                        <h3 class="mb-4 fw-bold">Request a Private Tour</h3>
+                        <form>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="name" class="form-label small fw-bold">Name</label>
+                                    <input type="text" class="form-control" id="name" placeholder="Your Full Name" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="email" class="form-label small fw-bold">Email</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Your Email Address" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="phone" class="form-label small fw-bold">Phone</label>
+                                    <input type="tel" class="form-control" id="phone" placeholder="Your Mobile Number">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="interest" class="form-label small fw-bold">Primary Interest</label>
+                                    <select class="form-select" id="interest">
+                                        <option selected>Fitness & Gym</option>
+                                        <option>Aquatics</option>
+                                        <option>Tennis & Sports</option>
+                                        <option>Family Membership</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <label for="message" class="form-label small fw-bold">Additional Notes</label>
+                                    <textarea class="form-control" id="message" rows="4" placeholder="How can we help you?" required></textarea>
+                                </div>
+                                <div class="col-12 text-end mt-4">
+                                    <button type="submit" class="btn btn-cta btn-lg px-5">Submit Request</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p class="text-muted small mb-0">&copy; 2026 Elite Recreation Club. All rights reserved. Powered By VINSEVA</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

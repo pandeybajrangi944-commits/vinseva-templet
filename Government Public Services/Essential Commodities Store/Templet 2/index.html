@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Essential Store | Quality Commodities at Fair Prices</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <div class="d-flex align-items-center">
+                    <i class="fas fa-store text-primary fs-2 me-2"></i>
+                    <span class="fw-bold fs-3" style="color: #0a2e12;">PurityPlus Essentials</span>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto text-center">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">Our Quality</a></li>
+                    <li class="nav-item"><a class="nav-link" href="menu.html">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Store Tour</a></li>
+                </ul>
+                <div class="d-flex justify-content-center">
+                    <a href="contact.html" class="btn btn-cta">Find a Store</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 1. Hero Section -->
+    <section class="hero-section py-5" style="background: linear-gradient(135deg, var(--light-green) 0%, #ffffff 100%); min-height: 85vh; display: flex; align-items: center; position: relative; overflow: hidden;">
+        <div class="container hero-content">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <span class="subtitle text-primary fw-bold text-uppercase mb-2 d-block">Farm Fresh & 100% Pure</span>
+                    <h1 class="display-3 fw-bold mb-3" style="color: #0a2e12;">Premium Essential Commodities For Your Home</h1>
+                    <p class="lead mb-4 text-muted">Discover the finest selection of grains, pulses, and organic oils. Sourced directly from nature to ensure your family's health and wellbeing.</p>
+                    <div class="d-flex gap-3">
+                        <a href="menu.html" class="btn btn-cta btn-lg px-4 shadow-sm"><i class="fas fa-shopping-basket me-2"></i>Explore Catalog</a>
+                        <a href="about.html" class="btn btn-outline-primary btn-lg px-4 border-2">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 position-relative text-center mt-5 mt-lg-0">
+                    <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&q=80&w=1000" alt="Premium Groceries" class="img-fluid rounded-4 shadow-lg position-relative z-index-1" style="max-width: 95%; border: 10px solid white;">
+                    <div class="position-absolute top-50 start-50 translate-middle" style="width: 500px; height: 500px; background: rgba(46,125,50,0.15); border-radius: 50%; filter: blur(80px); z-index: 0;"></div>
+                </div>
+            </div>
+        </div>
+        <!-- Floating Info Cards -->
+        <div class="container mt-5">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="p-4 bg-white rounded-4 shadow-sm border-bottom border-primary border-4 h-100 transition-hover">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fas fa-seedling text-primary fs-1 me-3"></i>
+                            <h5 class="mb-0">Purity Guaranteed</h5>
+                        </div>
+                        <p class="small text-muted mb-0">100% natural products without any artificial preservatives or chemical processing.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4 bg-white rounded-4 shadow-sm border-bottom border-accent border-4 h-100 transition-hover">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fas fa-handshake text-accent fs-1 me-3"></i>
+                            <h5 class="mb-0">Ethically Sourced</h5>
+                        </div>
+                        <p class="small text-muted mb-0">Working directly with local farmers to ensure fair trade and sustainable farming.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4 bg-white rounded-4 shadow-sm border-bottom border-primary border-4 h-100 transition-hover">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fas fa-check-double text-primary fs-1 me-3"></i>
+                            <h5 class="mb-0">Rigorous Testing</h5>
+                        </div>
+                        <p class="small text-muted mb-0">Every batch undergoes 20+ quality checks to ensure maximum nutritional value.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. About Preview -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="position-relative">
+                        <img src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&q=80&w=800" alt="Our Quality Standards" class="img-fluid rounded-4 shadow-sm">
+                        <div class="position-absolute bottom-0 end-0 bg-white p-4 shadow-lg rounded-start-4 d-none d-md-block border-start border-accent border-5">
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-award text-accent me-3 fs-2"></i>
+                                <div>
+                                    <h6 class="mb-0 text-dark fw-bold">Certified Quality</h6>
+                                    <small class="text-muted">ISO 9001:2015 Standards</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 ps-lg-5">
+                    <div class="section-header mb-4">
+                        <span class="subtitle">Our Heritage</span>
+                        <h2 class="title">Bringing Nature's Best Directly To Your Table</h2>
+                    </div>
+                    <p class="mb-4">At PurityPlus, our journey began with a simple mission: to provide every household with access to clean, unadulterated, and high-quality essential commodities. We bridge the gap between rural farms and urban kitchens.</p>
+                    
+                    <div class="row g-4 mb-4">
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center">
+                                <div class="icon-sm bg-light-green rounded-circle p-2 me-3">
+                                    <i class="fas fa-leaf text-primary"></i>
+                                </div>
+                                <h6 class="mb-0">100% Organic Range</h6>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center">
+                                <div class="icon-sm bg-light-green rounded-circle p-2 me-3">
+                                    <i class="fas fa-shield-alt text-primary"></i>
+                                </div>
+                                <h6 class="mb-0">Vacuum Sealed Freshness</h6>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center">
+                                <div class="icon-sm bg-light-green rounded-circle p-2 me-3">
+                                    <i class="fas fa-vials text-primary"></i>
+                                </div>
+                                <h6 class="mb-0">Chemical-Free Processing</h6>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center">
+                                <div class="icon-sm bg-light-green rounded-circle p-2 me-3">
+                                    <i class="fas fa-tags text-primary"></i>
+                                </div>
+                                <h6 class="mb-0">Transparent Pricing</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row g-3 mb-5 text-center">
+                        <div class="col-4">
+                            <div class="p-3 border-0 rounded-4 bg-light shadow-sm">
+                                <h4 class="mb-0 text-primary fw-bold">120+</h4>
+                                <small class="text-muted fw-semibold">Products</small>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="p-3 border-0 rounded-4 bg-light shadow-sm">
+                                <h4 class="mb-0 text-dark fw-bold">25k+</h4>
+                                <small class="text-muted fw-semibold">Happy Families</small>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="p-3 border-0 rounded-4 bg-light shadow-sm">
+                                <h4 class="mb-0 text-accent fw-bold">50+</h4>
+                                <small class="text-muted fw-semibold">Farm Partners</small>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="about.html" class="btn btn-cta px-5">Discover Our Process</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Menu Highlights -->
+    <section class="section-padding bg-light">
+        <div class="container text-center">
+            <div class="section-header">
+                <span class="subtitle">Our Product Categories</span>
+                <h2 class="title">Essentials Crafted with Care</h2>
+                <p class="text-muted mx-auto" style="max-width: 700px;">We specialize in the core building blocks of a healthy diet, ensuring each product meets the highest standards of purity.</p>
+            </div>
+            <div class="row g-4 mt-2">
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-5 bg-white rounded-4 shadow-sm h-100 transition-hover">
+                        <div class="mb-4 d-inline-block p-4 rounded-circle" style="background-color: #e8f5e9;">
+                            <i class="fas fa-seedling text-primary fs-1"></i>
+                        </div>
+                        <h4 class="mb-3">Premium Grains</h4>
+                        <p class="text-muted small mb-0">From long-grain basmati rice to nutrient-rich millets and whole wheat flour.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-5 bg-white rounded-4 shadow-sm h-100 transition-hover border-top border-primary border-5">
+                        <div class="mb-4 d-inline-block p-4 rounded-circle" style="background-color: #fff3e0;">
+                            <i class="fas fa-tint text-accent fs-1"></i>
+                        </div>
+                        <h4 class="mb-3">Cold-Pressed Oils</h4>
+                        <p class="text-muted small mb-0">Pure mustard, sunflower, and groundnut oils extracted using traditional methods.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <div class="p-5 bg-white rounded-4 shadow-sm h-100 transition-hover">
+                        <div class="mb-4 d-inline-block p-4 rounded-circle" style="background-color: #e3f2fd;">
+                            <i class="fas fa-pepper-hot text-info fs-1"></i>
+                        </div>
+                        <h4 class="mb-3">Stone-Ground Spices</h4>
+                        <p class="text-muted small mb-0">Hand-picked spices ground at low temperatures to preserve aroma and essential oils.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Why Choose Us -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-lg-1">
+                    <div class="section-header mb-4">
+                        <span class="subtitle">The Purity Advantage</span>
+                        <h2 class="title">Why Families Choose PurityPlus?</h2>
+                    </div>
+                    <p class="mb-5">We go beyond just selling commodities; we provide a promise of health and transparency in every package you open.</p>
+                    
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="d-flex align-items-start mb-4">
+                                <div class="bg-light rounded-4 p-3 me-3 shadow-sm">
+                                    <i class="fas fa-microscope text-primary fs-4"></i>
+                                </div>
+                                <div>
+                                    <h5 class="mb-1">Advanced Lab Testing</h5>
+                                    <p class="text-muted small mb-0">Internal and third-party testing for pesticides and contaminants.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex align-items-start mb-4">
+                                <div class="bg-light rounded-4 p-3 me-3 shadow-sm">
+                                    <i class="fas fa-recycle text-primary fs-4"></i>
+                                </div>
+                                <div>
+                                    <h5 class="mb-1">Eco-Friendly Packs</h5>
+                                    <p class="text-muted small mb-0">Our packaging is designed to be sustainable and keep food fresh longer.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex align-items-start mb-4">
+                                <div class="bg-light rounded-4 p-3 me-3 shadow-sm">
+                                    <i class="fas fa-shipping-fast text-primary fs-4"></i>
+                                </div>
+                                <div>
+                                    <h5 class="mb-1">Express Delivery</h5>
+                                    <p class="text-muted small mb-0">Safe and hygienic delivery to your doorstep within 24 hours.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex align-items-start mb-4">
+                                <div class="bg-light rounded-4 p-3 me-3 shadow-sm">
+                                    <i class="fas fa-headset text-primary fs-4"></i>
+                                </div>
+                                <div>
+                                    <h5 class="mb-1">24/7 Support</h5>
+                                    <p class="text-muted small mb-0">Dedicated customer care for all your queries and orders.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0 text-center">
+                    <div class="position-relative p-4">
+                        <img src="https://images.unsplash.com/photo-1516594798947-e65505dbb29d?auto=format&fit=crop&q=80&w=1000" alt="Fresh Essentials" class="img-fluid rounded-4 shadow-lg" style="max-width: 90%;">
+                        <div class="position-absolute top-0 start-0 w-100 h-100 border border-primary border-2 rounded-4 translate-middle-x ms-4 mt-4" style="z-index: -1;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="bg-white border-top pt-5 pb-4">
+        <div class="container">
+            <hr class="my-5 text-muted opacity-25">
+            <div class="row align-items-center text-center text-md-start">
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <p class="mb-0 text-muted small">&copy; 2026 PurityPlus Essentials. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0 text-muted small">A Premium Initiative by <span class="text-primary">VINSEVA<i class="fas fa-check-circle ms-1"></i></span></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Navbar Scroll Script -->
+    <script>
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('sticky');
+            } else {
+                navbar.classList.remove('sticky');
+            }
+        });
+    </script>
+</body>
+</html>

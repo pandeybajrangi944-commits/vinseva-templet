@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap');
+
+:root {
+    --primary-color: #ff4d6d; /* Vibrant Pink/Red from image */
+    --secondary-color: #38b6ff; /* Bright Blue from image */
+    --accent-color: #ff4d6d;
+    --bg-light: #fdfdfd;
+    --bg-white: #ffffff;
+    --text-dark: #1a1a1a;
+    --text-muted: #6c757d;
+    --border-radius: 12px;
+    --shadow-subtle: 0 4px 20px rgba(0, 0, 0, 0.05);
+    --gradient-primary: linear-gradient(135deg, #ff4d6d 0%, #ff758c 100%);
+    --gradient-hero: linear-gradient(135deg, rgba(255, 77, 109, 0.85) 0%, rgba(56, 182, 255, 0.85) 100%);
+    --transition-smooth: all 0.3s ease;
+}
+
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+    position: relative;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--text-dark);
+    background-color: var(--bg-white);
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: var(--text-dark);
+}
+
+a {
+    text-decoration: none;
+    transition: var(--transition-smooth);
+}
+
+/* Reusable Components */
+
+.section-padding {
+    padding: 80px 0;
+}
+
+.section-header {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.section-header .subtitle {
+    text-transform: uppercase;
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 0.85rem;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.section-header .title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #1a1a1a;
+}
+
+/* Navbar */
+.navbar {
+    padding: 20px 0;
+    background: transparent;
+    transition: var(--transition-smooth);
+}
+
+.navbar.sticky-top.scrolled {
+    background: white;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+    padding: 12px 0;
+}
+
+.navbar-brand .text-primary {
+    color: var(--primary-color) !important;
+}
+
+.nav-link {
+    font-weight: 500;
+    color: #333 !important;
+    margin: 0 12px;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: var(--primary-color) !important;
+}
+
+.btn-cta {
+    background: var(--gradient-primary);
+    color: white !important;
+    border-radius: 5px;
+    padding: 10px 24px;
+    font-weight: 600;
+    border: none;
+    box-shadow: 0 4px 15px rgba(255, 77, 109, 0.3);
+}
+
+.btn-cta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 77, 109, 0.4);
+}
+
+/* Hero Section */
+.hero-section {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: white;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--gradient-hero);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-content h1 {
+    font-size: 3.8rem;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.hero-content p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+/* Pricing/Plan Cards from Image */
+.pricing-card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    padding: 40px 30px;
+    text-align: center;
+    transition: var(--transition-smooth);
+    background: white;
+}
+
+.pricing-card:hover {
+    transform: translateY(-10px);
+}
+
+.pricing-card.active {
+    border-top: 4px solid var(--primary-color);
+}
+
+.pricing-card .plan-name {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.pricing-card .price {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 25px;
+}
+
+/* Speaker/Team Cards */
+.speaker-card {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: var(--shadow-subtle);
+    background: white;
+    margin-bottom: 30px;
+}
+
+.speaker-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.speaker-info {
+    padding: 20px;
+}
+
+.speaker-info h5 {
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+}
+
+.speaker-info span {
+    color: var(--primary-color);
+    font-size: 0.9rem;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background: #fdfdfd;
+    padding: 60px 0 20px;
+    text-align: center;
+}
+
+.social-links a {
+    width: 35px;
+    height: 35px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--secondary-color);
+    color: white;
+    border-radius: 4px;
+    margin: 0 5px;
+    font-size: 0.9rem;
+}
+
+.social-links a:hover {
+    background: var(--primary-color);
+}
+
+/* Feature/Icon Box */
+.feature-box {
+    text-align: center;
+    padding: 30px;
+    transition: var(--transition-smooth);
+}
+
+.feature-box i {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+/* FAQ Accordion Style */
+.accordion-item {
+    border: none;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+    border-radius: 8px !important;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: transparent;
+    color: var(--primary-color);
+    box-shadow: none;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: rgba(255, 77, 109, 0.1);
+}
+
+/* Image Card Overlays */
+.image-card-overlay {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    height: 300px;
+    margin-bottom: 20px;
+}
+
+.image-card-overlay .overlay-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px;
+    background: linear-gradient(transparent, rgba(0,0,0,0.8));
+    color: white;
+}
+
+/* Page Banner */
+.page-banner {
+    padding: 100px 0;
+    background: var(--gradient-hero);
+    color: white;
+    text-align: center;
+}
+
+.breadcrumb-item a {
+    color: white;
+    opacity: 0.8;
+}
+
+.btn-info {
+    background-color: var(--secondary-color);
+    border: none;
+    color: white;
+}
+
+.btn-info:hover {
+    background-color: #2999e0;
+    color: white;
+}
+
+.countdown-item {
+    background: rgba(255,255,255,0.2);
+    padding: 15px;
+    border-radius: 8px;
+    min-width: 80px;
+    backdrop-filter: blur(5px);
+}

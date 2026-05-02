@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500;600&display=swap');
+
+:root {
+    --primary-color: #1abc9c; /* Teal / Eco */
+    --accent-color: #16a085; /* Deeper Teal */
+    --urgent-color: #f59e0b; /* Vibrant Orange for urgency */
+    --secondary-color: #0f0f0f; /* Near-Black for high contrast */
+    --text-dark: #121212;
+    --text-light: #ffffff;
+    --text-muted: #7f8c8d;
+    --bg-dark: #0a1414;
+    --bg-light: #f9f9f9;
+    --white: #ffffff;
+    --border-radius: 0px;
+    --shadow-subtle: 0 15px 35px rgba(0, 0, 0, 0.1);
+    --transition-smooth: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--text-dark);
+    background-color: var(--white);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900; /* Extra bold for impact */
+    text-transform: uppercase;
+    letter-spacing: -0.5px; /* Tighter for modern activist feel */
+    color: var(--secondary-color);
+}
+
+/* Campaign Tag */
+.campaign-tag {
+    display: inline-block;
+    background-color: var(--urgent-color);
+    color: white;
+    padding: 5px 15px;
+    font-size: 0.7rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+/* Updated Button Styles */
+.btn-cta {
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 0;
+    padding: 18px 45px;
+    font-weight: 800;
+    border: 2px solid var(--primary-color);
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    transition: var(--transition-smooth);
+    position: relative;
+    z-index: 1;
+}
+
+.btn-cta:hover {
+    background-color: transparent;
+    color: var(--primary-color);
+}
+
+.btn-urgent {
+    background-color: var(--urgent-color);
+    color: white;
+    border: 2px solid var(--urgent-color);
+    padding: 18px 45px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: var(--transition-smooth);
+}
+
+.btn-urgent:hover {
+    background-color: transparent;
+    color: var(--urgent-color);
+}
+
+/* Section Header styling */
+.section-header {
+    margin-bottom: 50px;
+}
+
+.section-header .subtitle {
+    text-transform: uppercase;
+    color: var(--primary-color);
+    letter-spacing: 4px;
+    font-weight: 800;
+    font-size: 0.75rem;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.section-header .title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+}
+
+/* Navbar Customization */
+.navbar {
+    padding: 20px 0;
+    transition: var(--transition-smooth);
+}
+
+.nav-link {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    color: var(--secondary-color) !important;
+    padding: 10px 20px !important;
+}
+
+.nav-link.active, .nav-link:hover {
+    color: var(--primary-color) !important;
+}
+
+/* Hero Section Refinement */
+.hero-section {
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+.hero-overlay {
+    /* Teal overlay to enrich hero with brand color */
+    background: linear-gradient(to right, rgba(26, 188, 156, 0.8), rgba(0,0,0,0.2));
+}
+
+.hero-content h1 {
+    font-size: 4.5rem;
+    line-height: 1.1;
+    margin-bottom: 30px;
+}
+
+/* Stats Section */
+.stat-box {
+    border-left: 5px solid var(--primary-color);
+    padding: 15px 25px;
+    background: var(--white);
+    transition: var(--transition-smooth);
+}
+
+.stat-box:hover {
+    background: var(--bg-light);
+    transform: translateX(10px);
+}
+
+/* Priority Cards */
+.image-card-overlay {
+    height: 450px;
+    border-radius: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.image-card-overlay img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.8s ease;
+}
+
+.image-card-overlay:hover img {
+    transform: scale(1.1);
+}
+
+.image-card-overlay .overlay-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.9));
+    color: white;
+}
+
+/* Expert Cards */
+.expert-card {
+    border: none;
+    padding: 0;
+    background: transparent;
+}
+
+.expert-img-container {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 25px;
+}
+
+.expert-card img {
+    width: 100%;
+    filter: grayscale(100%);
+    transition: var(--transition-smooth);
+}
+
+.expert-card:hover img {
+    filter: grayscale(0%);
+    transform: scale(1.05);
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #0b2b2b;
+    color: var(--text-light);
+    padding: 100px 0 30px;
+}
+
+.footer h5 {
+    color: var(--white);
+    margin-bottom: 30px;
+}
+
+.footer-link {
+    color: var(--text-muted);
+    transition: var(--transition-smooth);
+    text-decoration: none;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.footer-link:hover {
+    color: var(--primary-color);
+    padding-left: 5px;
+}
+
+/* Utility Classes */
+.section-padding {
+    padding: 100px 0;
+}
+
+.bg-light {
+    background-color: var(--bg-light) !important;
+}
+
+.text-primary {
+    color: var(--primary-color) !important;
+}
+
+.bg-primary {
+    background-color: var(--primary-color) !important;
+}
+
+/* Page Banner Styles */
+.page-banner {
+    padding: 150px 0 100px;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+    position: relative;
+}
+
+/* Gallery Styles */
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    height: 300px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(100%);
+    transition: var(--transition-smooth);
+}
+
+.gallery-item:hover img {
+    filter: grayscale(0%);
+    transform: scale(1.1);
+}
+
+.gallery-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(26, 188, 156, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: var(--transition-smooth);
+}
+
+.gallery-item:hover .gallery-overlay {
+    opacity: 1;
+}
+
+.gallery-overlay span {
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.9rem;
+    transform: translateY(20px);
+    transition: var(--transition-smooth);
+}
+
+.gallery-item:hover .gallery-overlay span {
+    transform: translateY(0);
+}
+
+/* Sticky Navbar Class */
+.navbar.sticky {
+    background: white !important;
+    padding: 10px 0;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}

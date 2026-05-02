@@ -1,0 +1,437 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+:root {
+    --primary-color: #4f46e5; /* Sophisticated Indigo */
+    --primary-dark: #3730a3;
+    --accent-color: #fbbf24; /* Premium Gold/Amber accent */
+    --secondary-color: #6366f1; /* Lighter Indigo */
+    --text-dark: #1e293b; /* Slate 800 */
+    --text-muted: #64748b; /* Slate 500 */
+    --bg-light: #f8fafc; /* Slate 50 */
+    --bg-white: #ffffff;
+    --bg-dark: #0f172a; /* Slate 900 */
+    --border-radius-sm: 8px;
+    --border-radius-md: 16px;
+    --border-radius-lg: 32px;
+    --shadow-subtle: 0 4px 6px -1px rgb(0 0 0 / 0.05);
+    --shadow-medium: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+    --shadow-large: 0 20px 25px -5px rgb(0 0 0 / 0.1);
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+    position: relative;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: var(--text-dark);
+    background-color: var(--bg-white);
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 800;
+    color: var(--text-dark);
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+}
+
+.text-primary { color: var(--primary-color) !important; }
+.bg-primary { background-color: var(--primary-color) !important; }
+
+/* Navbar Improvements */
+.navbar {
+    padding: 25px 0;
+    transition: var(--transition-smooth);
+    background: transparent;
+}
+
+.navbar.sticky-top {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.1);
+    padding: 15px 0;
+}
+
+.navbar-brand .text-primary {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nav-link {
+    font-weight: 600;
+    color: var(--text-dark) !important;
+    padding: 10px 20px !important;
+    font-size: 0.95rem;
+    transition: var(--transition-smooth);
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    left: 20px;
+    right: 20px;
+    height: 3px;
+    background: var(--primary-color);
+    border-radius: 10px;
+    transform: scaleX(0);
+    transition: var(--transition-smooth);
+}
+
+.nav-link:hover::after, .nav-link.active::after {
+    transform: scaleX(1);
+}
+
+.nav-link:hover, .nav-link.active {
+    color: var(--primary-color) !important;
+}
+
+/* Button UIUX */
+.btn-cta {
+    background: var(--primary-color);
+    color: white;
+    border-radius: 100px;
+    padding: 16px 36px;
+    font-weight: 700;
+    border: none;
+    transition: var(--transition-smooth);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    box-shadow: 0 20px 40px -10px rgba(79, 70, 229, 0.3);
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.btn-cta::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: 0.5s;
+    z-index: -1;
+}
+
+.btn-cta:hover::after {
+    left: 100%;
+}
+
+.btn-cta:hover {
+    color: white;
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0 30px 60px -15px rgba(79, 70, 229, 0.4);
+    background: var(--primary-dark);
+}
+
+.btn-outline-dark {
+    border: 2px solid var(--text-dark);
+    border-radius: 100px;
+    padding: 16px 36px;
+    font-weight: 700;
+    transition: var(--transition-smooth);
+}
+
+.btn-outline-dark:hover {
+    background: var(--text-dark);
+    color: white;
+    transform: translateY(-3px);
+}
+
+/* Page Banner Improvements */
+.page-banner {
+    padding: 160px 0 100px !important;
+    background-color: var(--bg-dark) !important;
+    position: relative;
+    overflow: hidden;
+}
+
+.page-banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(255 255 255 / 58%), transparent);
+    z-index: 0;
+}
+
+.page-banner .container {
+    position: relative;
+    z-index: 1;
+}
+
+/* Form Control UIUX */
+.form-control, .form-select {
+    padding: 14px 20px;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+    background-color: #f8fafc;
+    font-weight: 500;
+    transition: var(--transition-smooth);
+}
+
+.form-control:focus, .form-select:focus {
+    background-color: white;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 4px rgba(124, 58, 237, 0.1);
+}
+
+/* Breadcrumb UIUX */
+.breadcrumb-item a {
+    text-decoration: none;
+    transition: var(--transition-smooth);
+}
+
+.breadcrumb-item a:hover {
+    color: var(--primary-color) !important;
+}
+
+/* Custom Utilities */
+.fw-800 { font-weight: 800; }
+.fw-700 { font-weight: 700; }
+.fw-600 { font-weight: 600; }
+
+/* Hero Section */
+.hero-section {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 140px 0 100px;
+    background: radial-gradient(circle at top right, rgba(124, 58, 237, 0.08), transparent),
+                radial-gradient(circle at bottom left, rgba(59, 130, 246, 0.08), transparent);
+}
+
+.hero-content h1 {
+    font-size: 5rem;
+    font-weight: 800;
+    margin-bottom: 30px;
+    color: var(--text-dark);
+    line-height: 1.05;
+    letter-spacing: -0.05em;
+}
+
+.hero-content .lead {
+    font-size: 1.35rem;
+    color: var(--text-muted);
+    max-width: 600px;
+    margin-bottom: 48px;
+    line-height: 1.6;
+}
+
+.hero-content .img-fluid {
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-large);
+    transition: var(--transition-smooth);
+}
+
+.hero-content .img-fluid:hover {
+    transform: translateY(-10px);
+}
+
+/* Section Header */
+.section-header .subtitle {
+    color: var(--primary-color);
+    background: rgba(79, 70, 229, 0.08);
+    border: 1px solid rgba(79, 70, 229, 0.15);
+    padding: 8px 20px;
+    border-radius: 100px;
+    font-weight: 700;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.section-header .title {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 24px;
+    line-height: 1.1;
+    letter-spacing: -0.04em;
+}
+
+/* Feature Item UIUX */
+.feature-item {
+    background: var(--bg-white);
+    border: 1px solid #f1f5f9;
+    border-radius: var(--border-radius-md);
+    padding: 48px !important;
+    transition: var(--transition-smooth);
+    position: relative;
+    overflow: hidden;
+}
+
+.feature-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 0;
+    background: var(--primary-color);
+    transition: var(--transition-smooth);
+}
+
+.feature-item:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 30px 60px -15px rgba(0, 0, 0, 0.1);
+    border-color: transparent;
+}
+
+.feature-item:hover::before {
+    height: 100%;
+}
+
+.feature-icon {
+    width: 80px;
+    height: 80px;
+    background: var(--bg-light);
+    color: var(--primary-color);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    transition: var(--transition-smooth);
+    margin-bottom: 30px;
+}
+
+.feature-item:hover .feature-icon {
+    background: var(--primary-color);
+    color: white;
+    transform: rotate(10deg);
+}
+
+/* Icon Box UIUX */
+.icon-box {
+    width: 60px;
+    height: 60px;
+    background: rgba(124, 58, 237, 0.1);
+    color: var(--primary-color);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    transition: var(--transition-smooth);
+}
+
+/* Image Card Overlay UIUX */
+.image-card-overlay {
+    position: relative;
+    border-radius: var(--border-radius-md);
+    overflow: hidden;
+    cursor: pointer;
+    height: 350px; /* Fixed height for consistency */
+    width: 100%;
+    margin-bottom: 24px; /* Ensure gap between rows */
+}
+
+.image-card-overlay img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Maintain aspect ratio and fill the container */
+    transition: var(--transition-smooth);
+}
+
+.image-card-overlay:hover img {
+    transform: scale(1.1);
+}
+
+.overlay-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 30px;
+    background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, transparent 100%);
+    color: white;
+    transform: translateY(20px);
+    opacity: 0;
+    transition: var(--transition-smooth);
+}
+
+.image-card-overlay:hover .overlay-text {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.overlay-text h4 {
+    color: white;
+    margin-bottom: 5px;
+    font-size: 1.25rem;
+}
+
+/* CTA Banner UIUX */
+.cta-banner {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)) !important;
+    border-radius: var(--border-radius-md);
+    margin: 0 15px 100px;
+    padding: 100px 0 !important;
+}
+
+/* Footer UIUX */
+footer {
+    background: #0f172a;
+    color: #94a3b8;
+    padding: 0px 0 10px;
+}
+
+footer h5 {
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+footer .nav-link {
+    color: #94a3b8 !important;
+    padding: 8px 0 !important;
+    font-weight: 500;
+}
+
+footer .nav-link:hover {
+    color: white !important;
+    transform: translateX(5px);
+}
+
+.social-links a {
+    width: 44px;
+    height: 44px;
+    background: rgba(255, 255, 255, 0.05);
+    color: white;
+    border-radius: 8px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 12px;
+    transition: var(--transition-smooth);
+}
+
+.social-links a:hover {
+    background: var(--primary-color);
+    transform: translateY(-5px);
+}
+
+@media (max-width: 991.98px) {
+    .hero-content h1 { font-size: 3rem; }
+    .section-header .title { font-size: 2.25rem; }
+    .section-padding { padding: 80px 0; }
+    .cta-banner { margin: 0 0 80px; border-radius: 0; }
+}
