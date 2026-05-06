@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Canteen Name | Fresh & Delicious Meals</title>
+    <title>MediCan Pharmacy | Your Trusted Healthcare Partner</title>
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
@@ -17,8 +17,8 @@
     <nav class="navbar navbar-expand-lg sticky-top">
         <div class="container">
             <a class="navbar-brand" href="index.html">
-                <!-- Replace with real logo if available -->
-                <span class="fw-bold fs-3 text-primary">CANTEEN</span>
+                <i class="fas fa-hand-holding-medical text-primary me-2 fs-2"></i>
+                <span class="fw-bold fs-3 text-dark">Medi<span class="text-primary">Pharma</span></span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -26,28 +26,70 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto text-center">
                     <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
-                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="menu.html">Medicines</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Our Store</a></li>
                 </ul>
-                <div class="d-flex justify-content-center">
-                    <a href="contact.html" class="btn btn-cta">Contact Us</a>
+                <div class="d-flex justify-content-center align-items-center">
+                    <a href="contact.html" class="btn btn-cta">Order Now</a>
                 </div>
             </div>
         </div>
     </nav>
 
     <!-- 1. Hero Section -->
-    <section class="hero-section" style="background-image: url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&q=80&w=1920');">
-        <div class="hero-overlay"></div>
-        <div class="container hero-content text-center">
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <h1 class="display-3">Delicious Meals, Freshly Served Daily</h1>
-                    <p class="lead mb-4">Experience the best cafeteria food with fresh ingredients and a welcoming atmosphere. From breakfast to dinner, we have you covered.</p>
-                    <div class="d-flex justify-content-center gap-3">
-                        <a href="menu.html" class="btn btn-cta btn-lg">View Menu</a>
-                        <a href="contact.html" class="btn btn-outline-light btn-lg rounded-pill px-4">Visit Us</a>
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 hero-content">
+                    <span class="section-header mb-0"><span class="subtitle">CERTIFIED PHARMACY</span></span>
+                    <h1 class="display-3">Your Health, Our <span class="highlight-line">Commitment</span> Every Day</h1>
+                    <p class="lead">Get authentic medicines, healthcare products, and professional advice right at your doorstep. We care for your wellness.</p>
+                    <div class="d-flex align-items-center gap-4">
+                        <a href="menu.html" class="btn btn-cta btn-lg">Browse Products</a>
+                        <div class="d-flex align-items-center gap-2">
+                            <a href="contact.html" class="play-btn"><i class="fas fa-prescription-bottle-alt"></i></a>
+                            <span class="fw-bold">Upload Prescription</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-5 mt-lg-0">
+                    <div class="position-relative">
+                        <img src="https://images.unsplash.com/photo-1586015555751-63bb77f4322a?auto=format&fit=crop&q=80&w=1000" alt="Pharmacy Store" class="img-fluid rounded-4 shadow-lg">
+                        <div class="position-absolute bottom-0 start-0 translate-middle-x bg-white p-3 rounded-4 shadow-sm d-none d-md-block" style="margin-left: 50px; margin-bottom: -30px;">
+                            <div class="d-flex align-items-center gap-3">
+                                <div class="bg-accent p-2 rounded-circle"><i class="fas fa-truck text-white"></i></div>
+                                <div>
+                                    <h6 class="mb-0 fw-bold">Fast Delivery</h6>
+                                    <small class="text-muted">Within 24 Hours</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hero Features -->
+            <div class="row mt-5 pt-5 g-4">
+                <div class="col-md-4">
+                    <div class="feature-card-minimal">
+                        <i class="fas fa-capsules mb-3 d-block"></i>
+                        <h5 class="fw-bold">Authentic Medicines from Top Brands</h5>
+                        <a href="menu.html" class="text-primary fw-bold small">Shop Now <i class="fas fa-arrow-right ms-1"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card-minimal">
+                        <i class="fas fa-user-shield mb-3 d-block"></i>
+                        <h5 class="fw-bold">Expert Pharmacist Consultations</h5>
+                        <a href="contact.html" class="text-primary fw-bold small">Talk to Us <i class="fas fa-arrow-right ms-1"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card-minimal">
+                        <i class="fas fa-heartbeat mb-3 d-block"></i>
+                        <h5 class="fw-bold">Personalized Healthcare Support</h5>
+                        <a href="about.html" class="text-primary fw-bold small">Learn More <i class="fas fa-arrow-right ms-1"></i></a>
                     </div>
                 </div>
             </div>
@@ -59,164 +101,73 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6 mb-4 mb-lg-0">
-                    <div class="image-card-overlay">
-                        <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&q=80&w=1000" alt="Canteen Interior" class="img-fluid rounded shadow">
+                    <div class="position-relative">
+                        <img src="https://images.unsplash.com/photo-1576602976047-174e57a47881?auto=format&fit=crop&q=80&w=1000" alt="Pharmacist" class="img-fluid rounded-4">
+                        <div class="position-absolute top-50 start-100 translate-middle d-none d-lg-block">
+                            <div class="bg-primary p-4 rounded-circle text-white shadow-lg" style="width: 100px; height: 100px; display: flex; align-items: center; justify-content: center;">
+                                <i class="fas fa-pills fs-2"></i>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-6 ps-lg-5">
                     <div class="section-header mb-4">
-                        <span class="subtitle">About Our Canteen</span>
-                        <h2 class="title">A Place for Fresh Food and Great Conversations</h2>
+                        <span class="subtitle">WHO WE ARE</span>
+                        <h2 class="title">Your Neighborhood <span class="highlight-line">Pharma Expert</span></h2>
                     </div>
-                    <p class="mb-4">We are dedicated to providing the highest quality meals at affordable prices. Our team of experienced chefs ensures that every dish is prepared with love and the freshest ingredients available.</p>
+                    <p class="mb-4">At MediPharma, we believe healthcare should be accessible and reliable. We provide a wide range of prescription medicines, OTC drugs, and wellness products with expert guidance.</p>
                     
                     <div class="row g-4 mb-4">
                         <div class="col-sm-6">
                             <div class="d-flex align-items-center">
-                                <i class="fas fa-leaf feature-icon me-3"></i>
-                                <h6 class="mb-0">Fresh Ingredients</h6>
+                                <i class="fas fa-check-circle text-primary me-3 fs-4"></i>
+                                <h6 class="mb-0 fw-bold">100% Genuine Products</h6>
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="d-flex align-items-center">
-                                <i class="fas fa-tag feature-icon me-3"></i>
-                                <h6 class="mb-0">Affordable Meals</h6>
+                                <i class="fas fa-check-circle text-primary me-3 fs-4"></i>
+                                <h6 class="mb-0 fw-bold">Free Health Checkups</h6>
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="d-flex align-items-center">
-                                <i class="fas fa-broom feature-icon me-3"></i>
-                                <h6 class="mb-0">Clean Kitchen</h6>
+                                <i class="fas fa-check-circle text-primary me-3 fs-4"></i>
+                                <h6 class="mb-0 fw-bold">Safe Storage Systems</h6>
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="d-flex align-items-center">
-                                <i class="fas fa-bolt feature-icon me-3"></i>
-                                <h6 class="mb-0">Quick Service</h6>
+                                <i class="fas fa-check-circle text-primary me-3 fs-4"></i>
+                                <h6 class="mb-0 fw-bold">Prescription Reminders</h6>
                             </div>
                         </div>
                     </div>
-                    <a href="about.html" class="btn btn-cta">Read More</a>
+                    <a href="about.html" class="btn btn-cta">Read Our Story</a>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- 3. Menu Highlights -->
-    <section class="section-padding bg-light">
-        <div class="container text-center">
-            <div class="section-header">
-                <span class="subtitle">Our Specials</span>
-                <h2 class="title">Menu Highlights</h2>
-            </div>
-            <div class="row g-4">
-                <div class="col-lg-4 col-md-6">
-                    <div class="image-card-overlay">
-                        <img src="https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?auto=format&fit=crop&q=80&w=600" alt="Breakfast Items" class="img-fluid">
-                        <div class="overlay-text text-start">
-                            <h4>Breakfast Items</h4>
-                            <p class="mb-0">Freshly brewed coffee & pastries</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="image-card-overlay">
-                        <img src="https://images.unsplash.com/photo-1541544741938-0af808871cc0?auto=format&fit=crop&q=80&w=600" alt="Popular Snacks" class="img-fluid">
-                        <div class="overlay-text text-start">
-                            <h4>Popular Snacks</h4>
-                            <p class="mb-0">Quick bites for your break</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-12">
-                    <div class="image-card-overlay">
-                        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&q=80&w=600" alt="Lunch Specials" class="img-fluid">
-                        <div class="overlay-text text-start">
-                            <h4>Lunch Specials</h4>
-                            <p class="mb-0">Healthy and hearty meals</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 4. Why Choose Us -->
+    <!-- CTA Section -->
     <section class="section-padding">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 order-lg-1">
-                    <div class="section-header mb-4">
-                        <span class="subtitle">Our Features</span>
-                        <h2 class="title">Why Choose Our Canteen?</h2>
-                    </div>
-                    <p class="mb-4">We believe that a good meal can brighten anyone's day. That's why we focus on quality, hygiene, and affordability.</p>
-                    
-                    <ul class="list-unstyled">
-                        <li class="mb-4">
-                            <div class="d-flex align-items-start">
-                                <div class="bg-primary text-white rounded-circle p-2 me-3" style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;">
-                                    <i class="fas fa-utensils"></i>
-                                </div>
-                                <div>
-                                    <h5 class="mb-1">Freshly Cooked Meals</h5>
-                                    <p class="text-muted mb-0">Our meals are prepared fresh every single day, never frozen or pre-packaged.</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="mb-4">
-                            <div class="d-flex align-items-start">
-                                <div class="bg-primary text-white rounded-circle p-2 me-3" style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;">
-                                    <i class="fas fa-wallet"></i>
-                                </div>
-                                <div>
-                                    <h5 class="mb-1">Affordable Prices</h5>
-                                    <p class="text-muted mb-0">High-quality food doesn't have to be expensive. We offer the best value for your money.</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="mb-4">
-                            <div class="d-flex align-items-start">
-                                <div class="bg-primary text-white rounded-circle p-2 me-3" style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;">
-                                    <i class="fas fa-shield-alt"></i>
-                                </div>
-                                <div>
-                                    <h5 class="mb-1">Hygienic Kitchen</h5>
-                                    <p class="text-muted mb-0">We maintain the highest standards of cleanliness and food safety in our kitchen.</p>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0">
-                    <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&q=80&w=1000" alt="Kitchen Serving" class="img-fluid rounded shadow-lg">
-                </div>
+            <div class="bg-accent p-5 rounded-4 text-center text-dark">
+                <h2 class="display-5 fw-bold mb-3">Caring for You, Caring for Your Health</h2>
+                <p class="lead mb-4">Visit our store today or order online for fast home delivery.</p>
+                <a href="contact.html" class="btn btn-dark btn-lg rounded-pill px-5">Contact Us</a>
             </div>
         </div>
     </section>
-
-    <!-- 7. CTA Banner -->
-    <section class="cta-banner">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <h2>Visit Our Canteen Today</h2>
-                    <p class="lead mb-4">Enjoy fresh and delicious meals every day. We are open from 8 AM to 8 PM.</p>
-                    <a href="contact.html" class="btn btn-cta btn-lg">Contact Us Now</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Footer -->
-    <footer>
+    <footer class="bg-dark text-white py-5">
         <div class="container">
+            <hr class="my-5 opacity-25">
             <div class="row align-items-center text-center text-md-start">
                 <div class="col-md-6 mb-3 mb-md-0">
-                    <p class="mb-0 text-muted">&copy; 2025 Canteen Name. All rights reserved.</p>
+                    <p class="mb-0 text-muted small">&copy; 2026 MediPharma. All rights reserved.</p>
                 </div>
                 <div class="col-md-6 text-md-end">
-                    <p class="mb-0 text-muted">Powered By <span class="text-danger">&hearts;</span> VINSEVA</p>
+                    <p class="mb-0 text-muted small">Powered By <span class="text-danger">&hearts;</span> VINSEVA</p>
                 </div>
             </div>
         </div>

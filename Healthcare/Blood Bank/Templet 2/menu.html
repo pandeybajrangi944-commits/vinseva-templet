@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Menu | Canteen Name</title>
+    <title>Campaigns | Blood Buddies</title>
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
@@ -13,11 +13,10 @@
 </head>
 <body>
 
-    <!-- Header / Navbar -->
-    <nav class="navbar navbar-expand-lg sticky-top sticky">
+    <nav class="navbar navbar-expand-lg sticky-top">
         <div class="container">
             <a class="navbar-brand" href="index.html">
-                <span class="fw-bold fs-3 text-primary">CANTEEN</span>
+                <span class="fw-bold fs-3" style="color: var(--primary-color);">BLOOD</span><span class="fw-bold fs-3" style="color: #333;">BUDDIES</span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -25,108 +24,106 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto text-center">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="menu.html">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="menu.html">Campaigns</a></li>
                     <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                 </ul>
-                <div class="d-flex justify-content-center">
-                    <a href="contact.html" class="btn btn-cta">Contact Us</a>
-                </div>
             </div>
         </div>
     </nav>
 
     <!-- Page Banner -->
-    <header class="page-banner" style="background-image: url('https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&q=80&w=1920');">
-        <div class="page-banner-overlay"></div>
-        <div class="container page-banner-content">
-            <h1 class="display-4 fw-bold mb-3">Our Menu</h1>
+    <header class="page-banner" style="background-image: url('https://images.unsplash.com/photo-1697192156499-d85cfe1452c0?auto=format&fit=crop&q=80&w=1920');">
+        <div class="hero-overlay"></div>
+        <div class="container page-banner-content text-center">
+            <h1 class="display-4 fw-bold mb-3 text-white">OUR CAMPAIGNS</h1>
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb justify-content-center">
-                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Menu</li>
+                    <li class="breadcrumb-item"><a href="index.html" class="text-white">Home</a></li>
+                    <li class="breadcrumb-item active text-danger" aria-current="page">Campaigns</li>
                 </ol>
             </nav>
         </div>
     </header>
 
-    <!-- Detailed Menu Items -->
+    <!-- Campaigns Section -->
     <section class="section-padding bg-light">
         <div class="container">
-            <div class="section-header text-center">
-                <span class="subtitle">Fresh & Healthy</span>
-                <h2 class="title">Our Detailed Menu</h2>
+            <div class="section-header text-center mb-5">
+                <h2 class="title">OUR CAMPAIGNS</h2>
+                <p class="text-muted fs-5">All over the world, we have arranged many blood donation campaigns.</p>
             </div>
             <div class="row g-4">
-                <div class="col-lg-4 col-md-6">
-                    <div class="custom-card">
-                        <img src="https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&q=80&w=600" alt="Egg Platter">
-                        <div class="card-body">
-                            <div class="d-flex justify-content-between align-items-center mb-2">
-                                <h4 class="mb-0">Healthy Breakfast Platter</h4>
-                                <span class="text-primary fw-bold fs-5">$12.00</span>
+                <div class="col-lg-6">
+                    <div class="bg-white p-4 shadow rounded border-start border-danger border-5 card-shadow h-100">
+                        <div class="row align-items-center g-4">
+                            <div class="col-md-5">
+                                <img src="https://images.unsplash.com/photo-1615461065624-21b562ee5566?auto=format&fit=crop&q=80&w=400" alt="Campaign" class="img-fluid rounded shadow-sm w-100" style="height: 180px; object-fit: cover;">
                             </div>
-                            <p class="text-muted mb-0">Two eggs, whole wheat toast, avocado, and fresh fruits.</p>
+                            <div class="col-md-7">
+                                <span class="text-danger fw-bold small"><i class="far fa-calendar-alt me-1"></i> 14 Feb, 2022</span>
+                                <h4 class="mt-2 mb-3 fw-bold">Blood Group Collection</h4>
+                                <p class="small text-muted mb-3">All over the world, we have arranged many blood donation campaigns and have collected millions of pints of blood.</p>
+                                <div class="small text-muted d-flex gap-3">
+                                    <span><i class="fas fa-map-marker-alt text-danger me-1"></i> New York, USA</span>
+                                    <span><i class="far fa-clock text-danger me-1"></i> 10:00 AM</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="custom-card">
-                        <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=600" alt="Veggie Salad">
-                        <div class="card-body">
-                            <div class="d-flex justify-content-between align-items-center mb-2">
-                                <h4 class="mb-0">Fresh Veggie Salad</h4>
-                                <span class="text-primary fw-bold fs-5">$10.00</span>
+                <div class="col-lg-6">
+                    <div class="bg-white p-4 shadow rounded border-start border-danger border-5 card-shadow h-100">
+                        <div class="row align-items-center g-4">
+                            <div class="col-md-5">
+                                <img src="https://images.unsplash.com/photo-1615461065624-21b562ee5566?auto=format&fit=crop&q=80&w=400" alt="Campaign" class="img-fluid rounded shadow-sm w-100" style="height: 180px; object-fit: cover;">
                             </div>
-                            <p class="text-muted mb-0">Seasonal vegetables with a house-made balsamic vinaigrette.</p>
+                            <div class="col-md-7">
+                                <span class="text-danger fw-bold small"><i class="far fa-calendar-alt me-1"></i> 20 Mar, 2022</span>
+                                <h4 class="mt-2 mb-3 fw-bold">Free Blood Test</h4>
+                                <p class="small text-muted mb-3">All over the world, we have arranged many blood donation campaigns and have collected millions of pints of blood.</p>
+                                <div class="small text-muted d-flex gap-3">
+                                    <span><i class="fas fa-map-marker-alt text-danger me-1"></i> California, USA</span>
+                                    <span><i class="far fa-clock text-danger me-1"></i> 09:00 AM</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="custom-card">
-                        <img src="https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&q=80&w=600" alt="Soup">
-                        <div class="card-body">
-                            <div class="d-flex justify-content-between align-items-center mb-2">
-                                <h4 class="mb-0">Daily Special Soup</h4>
-                                <span class="text-primary fw-bold fs-5">$8.00</span>
+                <div class="col-lg-6">
+                    <div class="bg-white p-4 shadow rounded border-start border-danger border-5 card-shadow h-100">
+                        <div class="row align-items-center g-4">
+                            <div class="col-md-5">
+                                <img src="https://images.unsplash.com/photo-1615461065624-21b562ee5566?auto=format&fit=crop&q=80&w=400" alt="Campaign" class="img-fluid rounded shadow-sm w-100" style="height: 180px; object-fit: cover;">
                             </div>
-                            <p class="text-muted mb-0">A warm bowl of our chef's daily soup special.</p>
+                            <div class="col-md-7">
+                                <span class="text-danger fw-bold small"><i class="far fa-calendar-alt me-1"></i> 15 Apr, 2022</span>
+                                <h4 class="mt-2 mb-3 fw-bold">Donation Camp</h4>
+                                <p class="small text-muted mb-3">All over the world, we have arranged many blood donation campaigns and have collected millions of pints of blood.</p>
+                                <div class="small text-muted d-flex gap-3">
+                                    <span><i class="fas fa-map-marker-alt text-danger me-1"></i> Texas, USA</span>
+                                    <span><i class="far fa-clock text-danger me-1"></i> 11:00 AM</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="custom-card">
-                        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&q=80&w=600" alt="Grilled Chicken">
-                        <div class="card-body">
-                            <div class="d-flex justify-content-between align-items-center mb-2">
-                                <h4 class="mb-0">Grilled Chicken Bowl</h4>
-                                <span class="text-primary fw-bold fs-5">$14.00</span>
+                <div class="col-lg-6">
+                    <div class="bg-white p-4 shadow rounded border-start border-danger border-5 card-shadow h-100">
+                        <div class="row align-items-center g-4">
+                            <div class="col-md-5">
+                                <img src="https://images.unsplash.com/photo-1615461065624-21b562ee5566?auto=format&fit=crop&q=80&w=400" alt="Campaign" class="img-fluid rounded shadow-sm w-100" style="height: 180px; object-fit: cover;">
                             </div>
-                            <p class="text-muted mb-0">Marinated grilled chicken with brown rice and steamed veggies.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="custom-card">
-                        <img src="https://images.unsplash.com/photo-1541544741938-0af808871cc0?auto=format&fit=crop&q=80&w=600" alt="Quick Snacks">
-                        <div class="card-body">
-                            <div class="d-flex justify-content-between align-items-center mb-2">
-                                <h4 class="mb-0">Assorted Snacks Plate</h4>
-                                <span class="text-primary fw-bold fs-5">$9.00</span>
+                            <div class="col-md-7">
+                                <span class="text-danger fw-bold small"><i class="far fa-calendar-alt me-1"></i> 05 May, 2022</span>
+                                <h4 class="mt-2 mb-3 fw-bold">Blood Type Awareness</h4>
+                                <p class="small text-muted mb-3">All over the world, we have arranged many blood donation campaigns and have collected millions of pints of blood.</p>
+                                <div class="small text-muted d-flex gap-3">
+                                    <span><i class="fas fa-map-marker-alt text-danger me-1"></i> Chicago, USA</span>
+                                    <span><i class="far fa-clock text-danger me-1"></i> 10:30 AM</span>
+                                </div>
                             </div>
-                            <p class="text-muted mb-0">A variety of quick bites to satisfy your cravings.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="custom-card">
-                        <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&q=80&w=400" alt="Coffee">
-                        <div class="card-body">
-                            <div class="d-flex justify-content-between align-items-center mb-2">
-                                <h4 class="mb-0">Brewed Coffee</h4>
-                                <span class="text-primary fw-bold fs-5">$4.00</span>
-                            </div>
-                            <p class="text-muted mb-0">Freshly brewed high-quality coffee beans.</p>
                         </div>
                     </div>
                 </div>
@@ -134,14 +131,15 @@
         </div>
     </section>
 
+
     <!-- CTA Section -->
     <section class="cta-banner">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8">
-                    <h2>Visit Our Canteen Today</h2>
-                    <p class="lead mb-4">Enjoy fresh and delicious meals every day. We are open from 8 AM to 8 PM.</p>
-                    <a href="contact.html" class="btn btn-cta btn-lg">Contact Us Now</a>
+                    <h2>JOIN WITH US AND SAVE LIFE</h2>
+                    <p class="lead mb-4">Your blood can bring smile in other person face. Become a volunteer today.</p>
+                    <a href="contact.html" class="btn btn-cta btn-lg">DONATE NOW</a>
                 </div>
             </div>
         </div>
@@ -152,14 +150,16 @@
         <div class="container">
             <div class="row align-items-center text-center text-md-start">
                 <div class="col-md-6 mb-3 mb-md-0">
-                    <p class="mb-0 text-muted">&copy; 2025 Canteen Name. All rights reserved.</p>
+                    <p class="mb-0">&copy; 2026 Blood Buddies. All rights reserved.</p>
                 </div>
                 <div class="col-md-6 text-md-end">
-                    <p class="mb-0 text-muted">Powered By <span class="text-danger">&hearts;</span> VINSEVA</p>
+                    <p class="mb-0">Powered By <span class="text-danger">&hearts;</span> VINSEVA</p>
                 </div>
             </div>
         </div>
     </footer>
+
+
 
     <!-- Bootstrap 5 JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

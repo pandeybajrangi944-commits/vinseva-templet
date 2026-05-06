@@ -1,21 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500;600&display=swap');
 
 :root {
-    --primary-color: #0b0f17;
-    --accent-color: #e53935;
-    --accent-color-2: #b81d2a;
-    --bg-light: #f6f7f9;
+    --primary-color: #1a1a1a;
+    --accent-color: #d32f2f;
+    --accent-color-2: #b71c1c;
+    --bg-light: #f8f9fa;
     --bg-white: #ffffff;
-    --text-dark: #0b0f17;
-    --text-muted: #6b7280;
-    --border-radius: 18px;
-    --border-radius-sm: 12px;
-    --shadow-subtle: 0 14px 40px rgba(11, 15, 23, 0.08);
-    --shadow-strong: 0 22px 60px rgba(11, 15, 23, 0.14);
-    --section-padding-desktop: 100px;
-    --section-padding-mobile: 60px;
-    --transition-smooth: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-    --focus-ring: 0 0 0 0.25rem rgba(229, 57, 53, 0.22);
+    --text-dark: #212121;
+    --text-muted: #757575;
+    --clinical-blue: #1976d2;
+    --border-radius: 12px;
+    --border-radius-sm: 8px;
+    --shadow-subtle: 0 4px 20px rgba(0, 0, 0, 0.05);
+    --shadow-strong: 0 8px 30px rgba(211, 47, 47, 0.1);
+    --section-padding-desktop: 80px;
+    --section-padding-mobile: 50px;
+    --transition-smooth: all 0.3s ease;
+    --focus-ring: 0 0 0 0.25rem rgba(211, 47, 47, 0.2);
 }
 
 html, body {
@@ -272,7 +273,14 @@ a {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, rgba(11, 15, 23, 0.92) 0%, rgba(11, 15, 23, 0.62) 52%, rgba(229, 57, 53, 0.18) 100%);
+    background: linear-gradient(90deg, rgba(26, 26, 26, 0.95) 0%, rgba(26, 26, 26, 0.7) 50%, rgba(211, 47, 47, 0.2) 100%);
+}
+
+.feature-icon {
+    font-size: 2.5rem;
+    color: var(--accent-color);
+    margin-bottom: 1.5rem;
+    display: inline-block;
 }
 
 .hero-content {
@@ -288,16 +296,6 @@ a {
 
 .hero-section .lead {
     color: rgba(255, 255, 255, 0.82);
-}
-
-.hero-section::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background:
-        radial-gradient(1200px 600px at 15% 20%, rgba(229, 57, 53, 0.22), transparent 60%),
-        radial-gradient(900px 500px at 85% 70%, rgba(255, 255, 255, 0.08), transparent 58%);
-    pointer-events: none;
 }
 
 /* Page Banner */
@@ -318,7 +316,7 @@ a {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, rgba(11, 15, 23, 0.92) 0%, rgba(11, 15, 23, 0.7) 52%, rgba(229, 57, 53, 0.16) 100%);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.9) 0%, rgba(26, 26, 26, 0.6) 100%);
 }
 
 .page-banner-content {

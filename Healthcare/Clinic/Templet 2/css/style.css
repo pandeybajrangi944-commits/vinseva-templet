@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500;600&display=swap');
 
 :root {
-    --primary-color: #2c3e50; /* Dark Charcoal */
-    --accent-color: #e67e22; /* Warm Orange/Gold */
-    --bg-light: #f4f7f6; /* Soft Neutral Background */
+    --primary-color: #3f3697; /* Deep Indigo/Purple from reference */
+    --accent-color: #ff5e94; /* Vibrant Pink from reference */
+    --bg-light: #fff5f8; /* Very Light Pink Background */
     --bg-white: #ffffff;
-    --text-dark: #2c3e50;
-    --text-muted: #7f8c8d;
-    --border-radius: 20px;
-    --shadow-subtle: 0 10px 30px rgba(0, 0, 0, 0.05);
+    --text-dark: #2a245d; /* Dark Indigo for text */
+    --text-muted: #8e8bb1;
+    --border-radius: 24px;
+    --shadow-subtle: 0 15px 40px rgba(63, 54, 151, 0.08);
     --section-padding-desktop: 100px;
     --section-padding-mobile: 60px;
     --transition-smooth: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -125,26 +125,42 @@ a {
     background-color: var(--accent-color);
     color: white;
     border-radius: 50px;
-    padding: 10px 25px;
+    padding: 12px 30px;
     font-weight: 600;
     border: none;
+    box-shadow: 0 4px 15px rgba(255, 94, 148, 0.3);
 }
 
 .btn-cta:hover {
-    background-color: #d35400;
+    background-color: #e84d82;
     color: white;
     transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 94, 148, 0.4);
+}
+
+.btn-outline-primary {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+    border-radius: 50px;
+    padding: 12px 30px;
+    font-weight: 600;
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--primary-color);
+    color: white;
 }
 
 /* Hero Section */
 .hero-section {
-    height: 80vh;
+    min-height: 90vh;
     display: flex;
     align-items: center;
     background-size: cover;
     background-position: center;
     position: relative;
-    color: white;
+    color: var(--text-dark);
+    background-color: var(--bg-light);
 }
 
 .hero-overlay {
@@ -153,7 +169,7 @@ a {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.4));
+    background: radial-gradient(circle at right, rgba(255, 245, 248, 0.2), rgba(255, 245, 248, 0.8));
 }
 
 .hero-content {
@@ -162,9 +178,88 @@ a {
 }
 
 .hero-content h1 {
-    font-size: 3.5rem;
-    color: white;
+    font-size: 4rem;
+    color: var(--primary-color);
     margin-bottom: 20px;
+    font-weight: 800;
+}
+
+.hero-content p {
+    color: var(--text-muted);
+    font-size: 1.2rem;
+}
+
+/* Feature Icon */
+.feature-icon {
+    width: 60px;
+    height: 60px;
+    background-color: var(--bg-light);
+    color: var(--accent-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    transition: var(--transition-smooth);
+}
+
+.custom-card:hover .feature-icon {
+    background-color: var(--accent-color);
+    color: white;
+}
+
+/* Badge/Subtitle Style from Image */
+.subtitle {
+    display: inline-block;
+    padding: 8px 20px;
+    background-color: rgba(255, 94, 148, 0.1);
+    color: var(--accent-color);
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 0.85rem;
+    margin-bottom: 15px;
+}
+
+/* Footer Customization */
+.footer-main {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 80px 0 40px;
+}
+
+.footer-main h5 {
+    color: white;
+    margin-bottom: 25px;
+}
+
+.footer-main a {
+    color: rgba(255, 255, 255, 0.7);
+    display: block;
+    margin-bottom: 12px;
+}
+
+.footer-main a:hover {
+    color: var(--accent-color);
+    padding-left: 5px;
+}
+
+.footer-bottom {
+    background-color: #2a245d;
+    padding: 20px 0;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.85rem;
+}
+
+/* Newsletter section from image */
+.newsletter-box {
+    background-color: var(--accent-color);
+    border-radius: var(--border-radius);
+    padding: 40px;
+    color: white;
+    margin-top: -50px;
+    position: relative;
+    z-index: 2;
 }
 
 /* Page Banner */
@@ -285,7 +380,7 @@ a {
 
 /* Footer */
 footer {
-    padding: 30px 0;
+    padding: 10px 0;
     border-top: 1px solid #eee;
     font-size: 0.9rem;
 }

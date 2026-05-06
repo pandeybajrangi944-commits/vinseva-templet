@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us | Canteen Name</title>
+    <title>Contact Us | Lifeline Blood Bank</title>
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
@@ -19,7 +19,7 @@
             <a class="navbar-brand" href="index.html">
                 <span class="d-inline-flex align-items-center gap-2 fw-bold fs-3 text-primary">
                     <i class="fa-solid fa-droplet"></i>
-                    <span>CANTEEN</span>
+                    <span>LIFELINE</span>
                 </span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -29,21 +29,21 @@
                 <ul class="navbar-nav mx-auto text-center">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
-                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="menu.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="gallery.html">Gallery</a></li>
                 </ul>
                 <div class="d-flex justify-content-center">
-                    <a href="contact.html" class="btn btn-cta">Contact Us</a>
+                    <a href="contact.html" class="btn btn-cta">Request Blood</a>
                 </div>
             </div>
         </div>
     </nav>
 
     <!-- Page Banner -->
-    <header class="page-banner" style="background-image: url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&q=80&w=1920');">
+    <header class="page-banner" style="background-image: url('https://images.unsplash.com/photo-1615461065624-21b562ee5566?auto=format&fit=crop&q=80&w=1920');">
         <div class="page-banner-overlay"></div>
         <div class="container page-banner-content">
-            <h1 class="display-4 fw-bold mb-3">Contact Us</h1>
+            <h1 class="display-4 fw-bold mb-3">Get Support</h1>
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb justify-content-center">
                     <li class="breadcrumb-item"><a href="index.html">Home</a></li>
@@ -63,7 +63,7 @@
                         <span class="subtitle">Get In Touch</span>
                         <h2 class="title">Contact Information</h2>
                     </div>
-                    <p class="mb-5">Have a question or feedback? We'd love to hear from you. Reach out to us using the details below or send us a message through the form.</p>
+                    <p class="mb-5">Have an emergency or want to register as a donor? Reach out to our 24/7 helpline or visit our center.</p>
                     
                     <div class="d-flex align-items-start mb-4">
                         <div class="bg-primary text-white rounded-circle p-3 me-3" style="width: 50px; height: 50px; display: flex; align-items: center; justify-content: center;">
@@ -71,7 +71,7 @@
                         </div>
                         <div>
                             <h5 class="mb-1">Address</h5>
-                            <p class="text-muted mb-0">123 Canteen Street, Food City, FC 12345</p>
+                            <p class="text-muted mb-0">456 Healthcare Ave, Life City, LC 56789</p>
                         </div>
                     </div>
                     
@@ -80,8 +80,8 @@
                             <i class="fas fa-phone"></i>
                         </div>
                         <div>
-                            <h5 class="mb-1">Phone</h5>
-                            <p class="text-muted mb-0">+1 234 567 890</p>
+                            <h5 class="mb-1">Emergency Helpline</h5>
+                            <p class="text-muted mb-0">+1 800 BLOOD BANK</p>
                         </div>
                     </div>
                     
@@ -91,7 +91,7 @@
                         </div>
                         <div>
                             <h5 class="mb-1">Email</h5>
-                            <p class="text-muted mb-0">info@canteenname.com</p>
+                            <p class="text-muted mb-0">emergency@lifelineblood.com</p>
                         </div>
                     </div>
                     
@@ -100,8 +100,8 @@
                             <i class="fas fa-clock"></i>
                         </div>
                         <div>
-                            <h5 class="mb-1">Business Hours</h5>
-                            <p class="text-muted mb-0">Mon - Sun: 8:00 AM - 8:00 PM</p>
+                            <h5 class="mb-1">Service Hours</h5>
+                            <p class="text-muted mb-0">24/7 Emergency Support Available</p>
                         </div>
                     </div>
                 </div>
@@ -109,11 +109,11 @@
                 <!-- Contact Form -->
                 <div class="col-lg-7">
                     <div class="custom-card card-body shadow-lg">
-                        <h3 class="mb-4">Send Us a Message</h3>
+                        <h3 class="mb-4">Blood Request / Donor Registration</h3>
                         <form>
                             <div class="row g-3">
                                 <div class="col-md-6">
-                                    <label for="name" class="form-label">Name</label>
+                                    <label for="name" class="form-label">Full Name</label>
                                     <input type="text" class="form-control" id="name" placeholder="Your Name" required>
                                 </div>
                                 <div class="col-md-6">
@@ -122,18 +122,37 @@
                                 </div>
                                 <div class="col-md-6">
                                     <label for="phone" class="form-label">Phone</label>
-                                    <input type="tel" class="form-control" id="phone" placeholder="Your Phone Number">
+                                    <input type="tel" class="form-control" id="phone" placeholder="Your Phone Number" required>
                                 </div>
                                 <div class="col-md-6">
-                                    <label for="subject" class="form-label">Subject</label>
-                                    <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                    <label for="type" class="form-label">I want to...</label>
+                                    <select class="form-select" id="type">
+                                        <option selected disabled>Choose an option</option>
+                                        <option value="request">Request Blood</option>
+                                        <option value="donate">Register as Donor</option>
+                                        <option value="query">General Inquiry</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-12">
+                                    <label for="bloodgroup" class="form-label">Blood Group (If known)</label>
+                                    <select class="form-select" id="bloodgroup">
+                                        <option selected disabled>Select Blood Group</option>
+                                        <option value="A+">A+</option>
+                                        <option value="A-">A-</option>
+                                        <option value="B+">B+</option>
+                                        <option value="B-">B-</option>
+                                        <option value="O+">O+</option>
+                                        <option value="O-">O-</option>
+                                        <option value="AB+">AB+</option>
+                                        <option value="AB-">AB-</option>
+                                    </select>
                                 </div>
                                 <div class="col-12">
-                                    <label for="message" class="form-label">Message</label>
-                                    <textarea class="form-control" id="message" rows="5" placeholder="Your Message" required></textarea>
+                                    <label for="message" class="form-label">Details / Message</label>
+                                    <textarea class="form-control" id="message" rows="5" placeholder="Please provide more details about your request or availability" required></textarea>
                                 </div>
                                 <div class="col-12 text-end">
-                                    <button type="submit" class="btn btn-cta btn-lg px-5">Submit Message</button>
+                                    <button type="submit" class="btn btn-cta btn-lg px-5">Submit Request</button>
                                 </div>
                             </div>
                         </form>
@@ -155,9 +174,9 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8">
-                    <h2>Visit Our Canteen Today</h2>
-                    <p class="lead mb-4">Enjoy fresh and delicious meals every day. We are open from 8 AM to 8 PM.</p>
-                    <a href="contact.html" class="btn btn-cta btn-lg">Contact Us Now</a>
+                    <h2>Emergency Dispatch</h2>
+                    <p class="lead mb-4">Our logistics team ensures rapid delivery of blood components to all major hospitals in the city.</p>
+                    <a href="contact.html" class="btn btn-cta btn-lg">Contact Logistics</a>
                 </div>
             </div>
         </div>
@@ -168,7 +187,7 @@
         <div class="container">
             <div class="row align-items-center text-center text-md-start">
                 <div class="col-md-6 mb-3 mb-md-0">
-                    <p class="mb-0 text-muted">&copy; 2025 Canteen Name. All rights reserved.</p>
+                    <p class="mb-0 text-muted">&copy; 2026 Lifeline Blood Bank. All rights reserved.</p>
                 </div>
                 <div class="col-md-6 text-md-end">
                     <p class="mb-0 text-muted">Powered By <span class="text-danger">&hearts;</span> VINSEVA</p>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us | Canteen Name</title>
+    <title>Contact Us | City Central Hospital</title>
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
@@ -13,124 +13,149 @@
 </head>
 <body>
 
-    <!-- Header / Navbar -->
-    <nav class="navbar navbar-expand-lg sticky-top sticky">
+    <!-- Top Bar -->
+    <div class="top-bar d-none d-lg-block">
         <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <span class="fw-bold fs-3 text-primary">CANTEEN</span>
+            <div class="row">
+                <div class="col-md-8">
+                    <span class="me-4"><i class="fas fa-ambulance me-2"></i> 24/7 Emergency: +1 800 999 0000</span>
+                    <span><i class="fas fa-envelope me-2"></i> contact@cityhospital.com</span>
+                </div>
+                <div class="col-md-4 text-end">
+                    <a href="#" class="text-muted me-3"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-muted me-3"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-muted me-3"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-muted"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header / Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <i class="fas fa-hospital-user text-primary fs-2 me-2"></i>
+                <span class="text-primary">City Central Hospital</span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mx-auto text-center">
+                <ul class="navbar-nav ms-auto me-4 text-center">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
-                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="menu.html">Departments</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Facilities</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
                 </ul>
                 <div class="d-flex justify-content-center">
-                    <a href="contact.html" class="btn btn-cta">Contact Us</a>
+                    <a href="contact.html" class="btn btn-appointment">Book Appointment</a>
                 </div>
             </div>
         </div>
     </nav>
 
     <!-- Page Banner -->
-    <header class="page-banner" style="background-image: url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&q=80&w=1920');">
-        <div class="page-banner-overlay"></div>
-        <div class="container page-banner-content">
-            <h1 class="display-4 fw-bold mb-3">Contact Us</h1>
+    <header class="page-banner" style="background: linear-gradient(rgba(44, 125, 160, 0.85), rgba(44, 125, 160, 0.85)), url('https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&q=80&w=1920'); background-size: cover; background-position: center; height: 300px;">
+        <div class="container page-banner-content text-white text-center">
+            <h1 class="display-4 fw-bold mb-3">Contact City Central Hospital</h1>
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb justify-content-center">
-                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Contact</li>
+                    <li class="breadcrumb-item"><a href="index.html" class="text-white">Home</a></li>
+                    <li class="breadcrumb-item active text-white-50" aria-current="page">Contact</li>
                 </ol>
             </nav>
         </div>
     </header>
 
     <!-- Contact Info & Form -->
-    <section class="section-padding">
+    <section class="section-padding py-5">
         <div class="container">
             <div class="row g-5">
                 <!-- Contact Info -->
                 <div class="col-lg-5">
                     <div class="section-header mb-4">
-                        <span class="subtitle">Get In Touch</span>
-                        <h2 class="title">Contact Information</h2>
+                        <span class="subtitle">Reach Us</span>
+                        <h2 class="title">Hospital Contact Details</h2>
                     </div>
-                    <p class="mb-5">Have a question or feedback? We'd love to hear from you. Reach out to us using the details below or send us a message through the form.</p>
+                    <p class="mb-5 text-muted">For general inquiries, appointments, or emergency assistance, please use the contact information provided below. We are here to help you 24/7.</p>
                     
                     <div class="d-flex align-items-start mb-4">
-                        <div class="bg-primary text-white rounded-circle p-3 me-3" style="width: 50px; height: 50px; display: flex; align-items: center; justify-content: center;">
+                        <div class="feature-icon-circle me-3">
                             <i class="fas fa-map-marker-alt"></i>
                         </div>
                         <div>
-                            <h5 class="mb-1">Address</h5>
-                            <p class="text-muted mb-0">123 Canteen Street, Food City, FC 12345</p>
+                            <h5 class="text-primary mb-1">Main Location</h5>
+                            <p class="text-muted mb-0">123 Medical Blvd, Health City, HC 12345</p>
                         </div>
                     </div>
                     
                     <div class="d-flex align-items-start mb-4">
-                        <div class="bg-primary text-white rounded-circle p-3 me-3" style="width: 50px; height: 50px; display: flex; align-items: center; justify-content: center;">
+                        <div class="feature-icon-circle me-3">
+                            <i class="fas fa-ambulance text-danger"></i>
+                        </div>
+                        <div>
+                            <h5 class="text-primary mb-1">24/7 Emergency Line</h5>
+                            <p class="text-muted mb-0 fw-bold">+1 800 999 0000</p>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex align-items-start mb-4">
+                        <div class="feature-icon-circle me-3">
                             <i class="fas fa-phone"></i>
                         </div>
                         <div>
-                            <h5 class="mb-1">Phone</h5>
+                            <h5 class="text-primary mb-1">Appointment Desk</h5>
                             <p class="text-muted mb-0">+1 234 567 890</p>
                         </div>
                     </div>
                     
                     <div class="d-flex align-items-start mb-4">
-                        <div class="bg-primary text-white rounded-circle p-3 me-3" style="width: 50px; height: 50px; display: flex; align-items: center; justify-content: center;">
+                        <div class="feature-icon-circle me-3">
                             <i class="fas fa-envelope"></i>
                         </div>
                         <div>
-                            <h5 class="mb-1">Email</h5>
-                            <p class="text-muted mb-0">info@canteenname.com</p>
-                        </div>
-                    </div>
-                    
-                    <div class="d-flex align-items-start">
-                        <div class="bg-primary text-white rounded-circle p-3 me-3" style="width: 50px; height: 50px; display: flex; align-items: center; justify-content: center;">
-                            <i class="fas fa-clock"></i>
-                        </div>
-                        <div>
-                            <h5 class="mb-1">Business Hours</h5>
-                            <p class="text-muted mb-0">Mon - Sun: 8:00 AM - 8:00 PM</p>
+                            <h5 class="text-primary mb-1">General Email</h5>
+                            <p class="text-muted mb-0">contact@cityhospital.com</p>
                         </div>
                     </div>
                 </div>
                 
                 <!-- Contact Form -->
                 <div class="col-lg-7">
-                    <div class="custom-card card-body shadow-lg">
-                        <h3 class="mb-4">Send Us a Message</h3>
+                    <div class="medical-card bg-white p-5 shadow-lg border-0">
+                        <h3 class="text-primary mb-4">Book an Appointment</h3>
                         <form>
                             <div class="row g-3">
                                 <div class="col-md-6">
-                                    <label for="name" class="form-label">Name</label>
-                                    <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                                    <label for="name" class="form-label small fw-bold text-muted">Patient Name</label>
+                                    <input type="text" class="form-control" id="name" placeholder="Full Name" required>
                                 </div>
                                 <div class="col-md-6">
-                                    <label for="email" class="form-label">Email</label>
-                                    <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                                    <label for="email" class="form-label small fw-bold text-muted">Email Address</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Email Address" required>
                                 </div>
                                 <div class="col-md-6">
-                                    <label for="phone" class="form-label">Phone</label>
-                                    <input type="tel" class="form-control" id="phone" placeholder="Your Phone Number">
+                                    <label for="phone" class="form-label small fw-bold text-muted">Contact Number</label>
+                                    <input type="tel" class="form-control" id="phone" placeholder="Phone Number" required>
                                 </div>
                                 <div class="col-md-6">
-                                    <label for="subject" class="form-label">Subject</label>
-                                    <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                    <label for="department" class="form-label small fw-bold text-muted">Select Department</label>
+                                    <select class="form-select" id="department">
+                                        <option selected>General Checkup</option>
+                                        <option>Cardiology</option>
+                                        <option>Neurology</option>
+                                        <option>Orthopedics</option>
+                                        <option>Pediatrics</option>
+                                    </select>
                                 </div>
                                 <div class="col-12">
-                                    <label for="message" class="form-label">Message</label>
-                                    <textarea class="form-control" id="message" rows="5" placeholder="Your Message" required></textarea>
+                                    <label for="message" class="form-label small fw-bold text-muted">Medical Concern (Optional)</label>
+                                    <textarea class="form-control" id="message" rows="4" placeholder="Briefly describe your concern"></textarea>
                                 </div>
-                                <div class="col-12 text-end">
-                                    <button type="submit" class="btn btn-cta btn-lg px-5">Submit Message</button>
+                                <div class="col-12 text-end mt-4">
+                                    <button type="submit" class="btn btn-appointment btn-lg px-5">Request Appointment</button>
                                 </div>
                             </div>
                         </form>
@@ -141,34 +166,23 @@
     </section>
 
     <!-- Google Map -->
-    <section class="section-padding py-0">
+    <section class="py-0">
         <div class="container-fluid px-0">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.1422937950147!2d-73.98731968459377!3d40.75889497932681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25855c6480299%3A0x55194ec5a1ae072e!2sTimes%20Square!5e0!3m2!1sen!2sus!4v1625573423456!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
     </section>
 
-    <!-- CTA Section -->
-    <section class="cta-banner">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <h2>Visit Our Canteen Today</h2>
-                    <p class="lead mb-4">Enjoy fresh and delicious meals every day. We are open from 8 AM to 8 PM.</p>
-                    <a href="contact.html" class="btn btn-cta btn-lg">Contact Us Now</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Footer -->
-    <footer>
+    <footer class="main-footer">
         <div class="container">
-            <div class="row align-items-center text-center text-md-start">
-                <div class="col-md-6 mb-3 mb-md-0">
-                    <p class="mb-0 text-muted">&copy; 2025 Canteen Name. All rights reserved.</p>
-                </div>
-                <div class="col-md-6 text-md-end">
-                    <p class="mb-0 text-muted">Powered By <span class="text-danger">&hearts;</span> VINSEVA</p>
+            <div class="footer-bottom text-center">
+                <div class="row align-items-center">
+                    <div class="col-md-6 text-md-start">
+                        <p class="mb-0">&copy; 2026 City Central Hospital. All rights reserved.</p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <p class="mb-0">Powered By <span class="text-accent">&hearts;</span> VINSEVA</p>
+                    </div>
                 </div>
             </div>
         </div>

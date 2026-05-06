@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Menu | Canteen Name</title>
+    <title>Medicines & Products | MediPharma</title>
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
@@ -17,7 +17,8 @@
     <nav class="navbar navbar-expand-lg sticky-top sticky">
         <div class="container">
             <a class="navbar-brand" href="index.html">
-                <span class="fw-bold fs-3 text-primary">CANTEEN</span>
+                <i class="fas fa-hand-holding-medical text-primary me-2 fs-2"></i>
+                <span class="fw-bold fs-3 text-dark">Medi<span class="text-primary">Pharma</span></span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -25,108 +26,139 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto text-center">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="menu.html">Menu</a></li>
-                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="menu.html">Medicines</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Our Store</a></li>
                 </ul>
-                <div class="d-flex justify-content-center">
-                    <a href="contact.html" class="btn btn-cta">Contact Us</a>
+                <div class="d-flex justify-content-center align-items-center">
+                    <a href="contact.html" class="btn btn-cta">Order Now</a>
                 </div>
             </div>
         </div>
     </nav>
 
     <!-- Page Banner -->
-    <header class="page-banner" style="background-image: url('https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&q=80&w=1920');">
-        <div class="page-banner-overlay"></div>
-        <div class="container page-banner-content">
-            <h1 class="display-4 fw-bold mb-3">Our Menu</h1>
+    <header class="page-banner bg-light py-5">
+        <div class="container page-banner-content text-center py-5">
+            <span class="subtitle text-primary fw-bold mb-2 d-block">OUR PRODUCTS</span>
+            <h1 class="display-4 fw-bold mb-3 text-dark">Medicines & <span class="highlight-line">Wellness Products</span></h1>
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb justify-content-center">
-                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Menu</li>
+                    <li class="breadcrumb-item"><a href="index.html" class="text-primary">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Medicines</li>
                 </ol>
             </nav>
         </div>
     </header>
 
-    <!-- Detailed Menu Items -->
+    <!-- Detailed Products Items -->
     <section class="section-padding bg-light">
         <div class="container">
             <div class="section-header text-center">
-                <span class="subtitle">Fresh & Healthy</span>
-                <h2 class="title">Our Detailed Menu</h2>
+                <h2 class="title">Featured <span class="highlight-line">Healthcare</span> Products</h2>
             </div>
             <div class="row g-4">
-                <div class="col-lg-4 col-md-6">
-                    <div class="custom-card">
-                        <img src="https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&q=80&w=600" alt="Egg Platter">
-                        <div class="card-body">
+                <div class="col-lg-3 col-md-6">
+                    <div class="bg-white rounded-4 shadow-sm overflow-hidden h-100 border transition-smooth">
+                        <img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&q=80&w=400" alt="Vitamin C" class="img-fluid">
+                        <div class="p-4">
                             <div class="d-flex justify-content-between align-items-center mb-2">
-                                <h4 class="mb-0">Healthy Breakfast Platter</h4>
-                                <span class="text-primary fw-bold fs-5">$12.00</span>
+                                <h5 class="fw-bold mb-0">Vitamin C Tablets</h5>
+                                <span class="text-primary fw-bold">$15.00</span>
                             </div>
-                            <p class="text-muted mb-0">Two eggs, whole wheat toast, avocado, and fresh fruits.</p>
+                            <p class="text-muted small mb-3">Immune system support with high-potency antioxidants.</p>
+                            <button class="btn btn-primary btn-sm w-100 rounded-pill">Add to Cart</button>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="custom-card">
-                        <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=600" alt="Veggie Salad">
-                        <div class="card-body">
+                <div class="col-lg-3 col-md-6">
+                    <div class="bg-white rounded-4 shadow-sm overflow-hidden h-100 border transition-smooth">
+                        <img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&q=80&w=400" alt="Face Mask" class="img-fluid">
+                        <div class="p-4">
                             <div class="d-flex justify-content-between align-items-center mb-2">
-                                <h4 class="mb-0">Fresh Veggie Salad</h4>
-                                <span class="text-primary fw-bold fs-5">$10.00</span>
+                                <h5 class="fw-bold mb-0">N95 Face Masks</h5>
+                                <span class="text-primary fw-bold">$25.00</span>
                             </div>
-                            <p class="text-muted mb-0">Seasonal vegetables with a house-made balsamic vinaigrette.</p>
+                            <p class="text-muted small mb-3">Pack of 10 certified high-protection breathable masks.</p>
+                            <button class="btn btn-primary btn-sm w-100 rounded-pill">Add to Cart</button>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="custom-card">
-                        <img src="https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&q=80&w=600" alt="Soup">
-                        <div class="card-body">
+                <div class="col-lg-3 col-md-6">
+                    <div class="bg-white rounded-4 shadow-sm overflow-hidden h-100 border transition-smooth">
+                        <img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&q=80&w=400" alt="Thermometer" class="img-fluid">
+                        <div class="p-4">
                             <div class="d-flex justify-content-between align-items-center mb-2">
-                                <h4 class="mb-0">Daily Special Soup</h4>
-                                <span class="text-primary fw-bold fs-5">$8.00</span>
+                                <h5 class="fw-bold mb-0">Digital Thermometer</h5>
+                                <span class="text-primary fw-bold">$12.00</span>
                             </div>
-                            <p class="text-muted mb-0">A warm bowl of our chef's daily soup special.</p>
+                            <p class="text-muted small mb-3">Fast and accurate temperature reading with digital display.</p>
+                            <button class="btn btn-primary btn-sm w-100 rounded-pill">Add to Cart</button>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="custom-card">
-                        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&q=80&w=600" alt="Grilled Chicken">
-                        <div class="card-body">
+                <div class="col-lg-3 col-md-6">
+                    <div class="bg-white rounded-4 shadow-sm overflow-hidden h-100 border transition-smooth">
+                        <img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&q=80&w=400" alt="Hand Sanitizer" class="img-fluid">
+                        <div class="p-4">
                             <div class="d-flex justify-content-between align-items-center mb-2">
-                                <h4 class="mb-0">Grilled Chicken Bowl</h4>
-                                <span class="text-primary fw-bold fs-5">$14.00</span>
+                                <h5 class="fw-bold mb-0">Hand Sanitizer</h5>
+                                <span class="text-primary fw-bold">$8.00</span>
                             </div>
-                            <p class="text-muted mb-0">Marinated grilled chicken with brown rice and steamed veggies.</p>
+                            <p class="text-muted small mb-3">Alcohol-based germ protection with aloe vera extracts.</p>
+                            <button class="btn btn-primary btn-sm w-100 rounded-pill">Add to Cart</button>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="custom-card">
-                        <img src="https://images.unsplash.com/photo-1541544741938-0af808871cc0?auto=format&fit=crop&q=80&w=600" alt="Quick Snacks">
-                        <div class="card-body">
+                <div class="col-lg-3 col-md-6">
+                    <div class="bg-white rounded-4 shadow-sm overflow-hidden h-100 border transition-smooth">
+                        <img src="https://images.unsplash.com/photo-1631549916768-4119b2e5f926?auto=format&fit=crop&q=80&w=400" alt="Pain Relief" class="img-fluid">
+                        <div class="p-4">
                             <div class="d-flex justify-content-between align-items-center mb-2">
-                                <h4 class="mb-0">Assorted Snacks Plate</h4>
-                                <span class="text-primary fw-bold fs-5">$9.00</span>
+                                <h5 class="fw-bold mb-0">Pain Relief Gel</h5>
+                                <span class="text-primary fw-bold">$10.00</span>
                             </div>
-                            <p class="text-muted mb-0">A variety of quick bites to satisfy your cravings.</p>
+                            <p class="text-muted small mb-3">Fast-acting topical gel for muscle and joint pain.</p>
+                            <button class="btn btn-primary btn-sm w-100 rounded-pill">Add to Cart</button>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="custom-card">
-                        <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&q=80&w=400" alt="Coffee">
-                        <div class="card-body">
+                <div class="col-lg-3 col-md-6">
+                    <div class="bg-white rounded-4 shadow-sm overflow-hidden h-100 border transition-smooth">
+                        <img src="https://images.unsplash.com/photo-1631549916768-4119b2e5f926?auto=format&fit=crop&q=80&w=400" alt="Baby Lotion" class="img-fluid">
+                        <div class="p-4">
                             <div class="d-flex justify-content-between align-items-center mb-2">
-                                <h4 class="mb-0">Brewed Coffee</h4>
-                                <span class="text-primary fw-bold fs-5">$4.00</span>
+                                <h5 class="fw-bold mb-0">Gentle Baby Lotion</h5>
+                                <span class="text-primary fw-bold">$18.00</span>
                             </div>
-                            <p class="text-muted mb-0">Freshly brewed high-quality coffee beans.</p>
+                            <p class="text-muted small mb-3">Hypoallergenic moisturizing lotion for delicate skin.</p>
+                            <button class="btn btn-primary btn-sm w-100 rounded-pill">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="bg-white rounded-4 shadow-sm overflow-hidden h-100 border transition-smooth">
+                        <img src="https://images.unsplash.com/photo-1631549916768-4119b2e5f926?auto=format&fit=crop&q=80&w=400" alt="Omega 3" class="img-fluid">
+                        <div class="p-4">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h5 class="fw-bold mb-0">Omega 3 Capsules</h5>
+                                <span class="text-primary fw-bold">$22.00</span>
+                            </div>
+                            <p class="text-muted small mb-3">Heart and brain health support with pure fish oil.</p>
+                            <button class="btn btn-primary btn-sm w-100 rounded-pill">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="bg-white rounded-4 shadow-sm overflow-hidden h-100 border transition-smooth">
+                        <img src="https://images.unsplash.com/photo-1631549916768-4119b2e5f926?auto=format&fit=crop&q=80&w=400" alt="Blood Pressure Monitor" class="img-fluid">
+                        <div class="p-4">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h5 class="fw-bold mb-0">BP Monitor</h5>
+                                <span class="text-primary fw-bold">$45.00</span>
+                            </div>
+                            <p class="text-muted small mb-3">Automatic digital blood pressure monitoring device.</p>
+                            <button class="btn btn-primary btn-sm w-100 rounded-pill">Add to Cart</button>
                         </div>
                     </div>
                 </div>
@@ -135,27 +167,26 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="cta-banner">
+    <section class="section-padding">
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <h2>Visit Our Canteen Today</h2>
-                    <p class="lead mb-4">Enjoy fresh and delicious meals every day. We are open from 8 AM to 8 PM.</p>
-                    <a href="contact.html" class="btn btn-cta btn-lg">Contact Us Now</a>
-                </div>
+            <div class="bg-accent p-5 rounded-4 text-center text-dark">
+                <h2 class="display-5 fw-bold mb-3">Need Professional Advice?</h2>
+                <p class="lead mb-4">Our certified pharmacists are here to help you with your medication queries.</p>
+                <a href="contact.html" class="btn btn-dark btn-lg rounded-pill px-5">Talk to Pharmacist</a>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer>
+    <footer class="bg-dark text-white py-5">
         <div class="container">
+            <hr class="my-5 opacity-25">
             <div class="row align-items-center text-center text-md-start">
                 <div class="col-md-6 mb-3 mb-md-0">
-                    <p class="mb-0 text-muted">&copy; 2025 Canteen Name. All rights reserved.</p>
+                    <p class="mb-0 text-muted small">&copy; 2026 MediPharma. All rights reserved.</p>
                 </div>
                 <div class="col-md-6 text-md-end">
-                    <p class="mb-0 text-muted">Powered By <span class="text-danger">&hearts;</span> VINSEVA</p>
+                    <p class="mb-0 text-muted small">Powered By <span class="text-danger">&hearts;</span> VINSEVA</p>
                 </div>
             </div>
         </div>

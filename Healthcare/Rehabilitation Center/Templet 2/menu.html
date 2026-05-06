@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Menu | Canteen Name</title>
+    <title>Our Services | BloodLife</title>
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
@@ -13,120 +13,106 @@
 </head>
 <body>
 
+
     <!-- Header / Navbar -->
-    <nav class="navbar navbar-expand-lg sticky-top sticky">
+    <nav class="navbar navbar-expand-lg sticky-top py-3">
         <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <span class="fw-bold fs-3 text-primary">CANTEEN</span>
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <i class="fas fa-tint text-primary fs-2 me-2"></i>
+                <span class="fw-bold fs-3 text-dark">BLOOD<span class="text-primary">LIFE</span></span>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mx-auto text-center">
+                <ul class="navbar-nav ms-auto text-center align-items-center">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="menu.html">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="menu.html">Services</a></li>
                     <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item ms-lg-3 d-flex gap-3">
+                        <a href="#" class="text-dark"><i class="fas fa-search"></i></a>
+                        <a href="#" class="text-dark"><i class="fas fa-user-circle"></i></a>
+                    </li>
                 </ul>
-                <div class="d-flex justify-content-center">
-                    <a href="contact.html" class="btn btn-cta">Contact Us</a>
-                </div>
             </div>
         </div>
     </nav>
 
     <!-- Page Banner -->
     <header class="page-banner" style="background-image: url('https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&q=80&w=1920');">
-        <div class="page-banner-overlay"></div>
+        <div class="page-banner-overlay" style="background: rgba(211, 47, 47, 0.7);"></div>
         <div class="container page-banner-content">
-            <h1 class="display-4 fw-bold mb-3">Our Menu</h1>
+            <h1 class="display-4 fw-bold mb-3">Our Services</h1>
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb justify-content-center">
-                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Menu</li>
+                    <li class="breadcrumb-item"><a href="index.html" class="text-white">Home</a></li>
+                    <li class="breadcrumb-item active text-white opacity-75" aria-current="page">Services</li>
                 </ol>
             </nav>
         </div>
     </header>
 
-    <!-- Detailed Menu Items -->
+    <!-- Detailed Services Items -->
     <section class="section-padding bg-light">
         <div class="container">
             <div class="section-header text-center">
-                <span class="subtitle">Fresh & Healthy</span>
-                <h2 class="title">Our Detailed Menu</h2>
+                <span class="subtitle">Professional Blood Services</span>
+                <h2 class="title">How We Help the Community</h2>
             </div>
             <div class="row g-4">
                 <div class="col-lg-4 col-md-6">
-                    <div class="custom-card">
-                        <img src="https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&q=80&w=600" alt="Egg Platter">
-                        <div class="card-body">
-                            <div class="d-flex justify-content-between align-items-center mb-2">
-                                <h4 class="mb-0">Healthy Breakfast Platter</h4>
-                                <span class="text-primary fw-bold fs-5">$12.00</span>
-                            </div>
-                            <p class="text-muted mb-0">Two eggs, whole wheat toast, avocado, and fresh fruits.</p>
+                    <div class="bg-white border-0 rounded-0 h-100 shadow-sm overflow-hidden">
+                        <img src="https://plus.unsplash.com/premium_photo-1723132609787-ba0bb87eef3b?auto=format&fit=crop&q=80&w=600" class="img-fluid" alt="Whole Blood">
+                        <div class="p-4">
+                            <h4 class="fw-bold mb-2">Whole Blood Donation</h4>
+                            <p class="text-secondary small mb-0">The most common type of donation, helping patients with surgeries and trauma cases.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
-                    <div class="custom-card">
-                        <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=600" alt="Veggie Salad">
-                        <div class="card-body">
-                            <div class="d-flex justify-content-between align-items-center mb-2">
-                                <h4 class="mb-0">Fresh Veggie Salad</h4>
-                                <span class="text-primary fw-bold fs-5">$10.00</span>
-                            </div>
-                            <p class="text-muted mb-0">Seasonal vegetables with a house-made balsamic vinaigrette.</p>
+                    <div class="bg-white border-0 rounded-0 h-100 shadow-sm overflow-hidden">
+                        <img src="https://plus.unsplash.com/premium_photo-1723132609787-ba0bb87eef3b?auto=format&fit=crop&q=80&w=600" class="img-fluid" alt="Plasma">
+                        <div class="p-4">
+                            <h4 class="fw-bold mb-2">Plasma Donation</h4>
+                            <p class="text-secondary small mb-0">Crucial for treating burn victims, shock, and bleeding disorders.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
-                    <div class="custom-card">
-                        <img src="https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&q=80&w=600" alt="Soup">
-                        <div class="card-body">
-                            <div class="d-flex justify-content-between align-items-center mb-2">
-                                <h4 class="mb-0">Daily Special Soup</h4>
-                                <span class="text-primary fw-bold fs-5">$8.00</span>
-                            </div>
-                            <p class="text-muted mb-0">A warm bowl of our chef's daily soup special.</p>
+                    <div class="bg-white border-0 rounded-0 h-100 shadow-sm overflow-hidden">
+                        <img src="https://plus.unsplash.com/premium_photo-1723132609787-ba0bb87eef3b?auto=format&fit=crop&q=80&w=600" class="img-fluid" alt="Platelets">
+                        <div class="p-4">
+                            <h4 class="fw-bold mb-2">Platelet Donation</h4>
+                            <p class="text-secondary small mb-0">Essential for cancer patients undergoing chemotherapy and major surgeries.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
-                    <div class="custom-card">
-                        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&q=80&w=600" alt="Grilled Chicken">
-                        <div class="card-body">
-                            <div class="d-flex justify-content-between align-items-center mb-2">
-                                <h4 class="mb-0">Grilled Chicken Bowl</h4>
-                                <span class="text-primary fw-bold fs-5">$14.00</span>
-                            </div>
-                            <p class="text-muted mb-0">Marinated grilled chicken with brown rice and steamed veggies.</p>
+                    <div class="bg-white border-0 rounded-0 h-100 shadow-sm overflow-hidden">
+                        <img src="https://plus.unsplash.com/premium_photo-1723132609787-ba0bb87eef3b?auto=format&fit=crop&q=80&w=600" class="img-fluid" alt="Testing">
+                        <div class="p-4">
+                            <h4 class="fw-bold mb-2">Blood Group Testing</h4>
+                            <p class="text-secondary small mb-0">Accurate blood group determination and health screening for every donor.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
-                    <div class="custom-card">
-                        <img src="https://images.unsplash.com/photo-1541544741938-0af808871cc0?auto=format&fit=crop&q=80&w=600" alt="Quick Snacks">
-                        <div class="card-body">
-                            <div class="d-flex justify-content-between align-items-center mb-2">
-                                <h4 class="mb-0">Assorted Snacks Plate</h4>
-                                <span class="text-primary fw-bold fs-5">$9.00</span>
-                            </div>
-                            <p class="text-muted mb-0">A variety of quick bites to satisfy your cravings.</p>
+                    <div class="bg-white border-0 rounded-0 h-100 shadow-sm overflow-hidden">
+                        <img src="https://plus.unsplash.com/premium_photo-1723132609787-ba0bb87eef3b?auto=format&fit=crop&q=80&w=600" class="img-fluid" alt="Storage">
+                        <div class="p-4">
+                            <h4 class="fw-bold mb-2">Cold Storage & Logistics</h4>
+                            <p class="text-secondary small mb-0">Safe storage and rapid transport of blood products to medical facilities.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
-                    <div class="custom-card">
-                        <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&q=80&w=400" alt="Coffee">
-                        <div class="card-body">
-                            <div class="d-flex justify-content-between align-items-center mb-2">
-                                <h4 class="mb-0">Brewed Coffee</h4>
-                                <span class="text-primary fw-bold fs-5">$4.00</span>
-                            </div>
-                            <p class="text-muted mb-0">Freshly brewed high-quality coffee beans.</p>
+                    <div class="bg-white border-0 rounded-0 h-100 shadow-sm overflow-hidden">
+                        <img src="https://plus.unsplash.com/premium_photo-1723132609787-ba0bb87eef3b?auto=format&fit=crop&q=80&w=600" class="img-fluid" alt="Emergency">
+                        <div class="p-4">
+                            <h4 class="fw-bold mb-2">Emergency Response</h4>
+                            <p class="text-secondary small mb-0">Dedicated 24/7 hotline for emergency blood requirements in critical situations.</p>
                         </div>
                     </div>
                 </div>
@@ -137,25 +123,22 @@
     <!-- CTA Section -->
     <section class="cta-banner">
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <h2>Visit Our Canteen Today</h2>
-                    <p class="lead mb-4">Enjoy fresh and delicious meals every day. We are open from 8 AM to 8 PM.</p>
-                    <a href="contact.html" class="btn btn-cta btn-lg">Contact Us Now</a>
-                </div>
-            </div>
+            <h2>Ready to Save a Life?</h2>
+            <p>Your blood donation can give someone a second chance at life. Join our community of lifesavers and schedule your appointment today.</p>
+            <a href="contact.html" class="btn btn-cta-light">Schedule Your Donation</a>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer>
+    <footer class="bg-dark text-white pt-5 pb-3">
         <div class="container">
+            <hr class="opacity-25">
             <div class="row align-items-center text-center text-md-start">
                 <div class="col-md-6 mb-3 mb-md-0">
-                    <p class="mb-0 text-muted">&copy; 2025 Canteen Name. All rights reserved.</p>
+                    <p class="mb-0 text-muted small" style="color: aliceblue;">&copy; 2026 BLOODLIFE. All rights reserved.</p>
                 </div>
                 <div class="col-md-6 text-md-end">
-                    <p class="mb-0 text-muted">Powered By <span class="text-danger">&hearts;</span> VINSEVA</p>
+                    <p class="mb-0 text-muted small" style="color: aliceblue;">Powered By <span class="text-primary">&hearts;</span> VINSEVA</p>
                 </div>
             </div>
         </div>

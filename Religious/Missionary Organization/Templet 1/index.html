@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canteen Name | Fresh & Delicious Meals</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Top Bar -->
+    <div class="top-bar d-none d-lg-block">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <span class="me-4"><i class="fas fa-phone-alt"></i> +1 800 555 0199</span>
+                    <span class="me-4"><i class="fas fa-map-marker-alt"></i> 789 Faith Way, Springfield</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header / Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <span class="fw-bold fs-3">GraceFound</span>
+            </a>
+            <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">Our Mission</a></li>
+                    <li class="nav-item"><a class="nav-link" href="menu.html">Ministries</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Support Us</a></li>
+                    <li class="nav-item d-none d-lg-block">
+                        <span class="search-icon"><i class="fas fa-search"></i></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 1. Hero Section -->
+    <section class="hero-section" style="background-image: url('https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&q=80&w=1920');">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <div class="row align-items-center">
+                <div class="col-lg-7">
+                    <h1 class="display-3">Sharing Hope, Changing Lives</h1>
+                    <p class="lead mb-4">Dedicated to serving communities worldwide through spiritual guidance, humanitarian aid, and sustainable development. Join our global mission to spread love and compassion.</p>
+                </div>
+                <div class="col-lg-5">
+                    <div class="quote-form-container">
+                        <div class="quote-header">
+                            <i class="fas fa-hand-holding-heart"></i>
+                            <div>
+                                <small>Empower a community today</small>
+                                <h5>Support Our Mission</h5>
+                            </div>
+                        </div>
+                        <div class="quote-body">
+                            <form>
+                                <input type="text" class="form-control" placeholder="Full Name">
+                                <input type="email" class="form-control" placeholder="Email Address">
+                                <input type="text" class="form-control" placeholder="Phone Number">
+                                <input type="text" class="form-control" placeholder="Interest (e.g., Volunteering, Donation)">
+                                <button type="submit" class="btn btn-submit-quote">Join the Movement</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. Feature Cards Section -->
+    <section class="section-padding pt-0">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="feature-card">
+                        <i class="fas fa-bible"></i>
+                        <h4>Spiritual Growth</h4>
+                        <p class="text-muted">Providing spiritual mentorship and resources to nurture faith in developing regions.</p>
+                        <a href="menu.html" class="btn-read-more">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="feature-card">
+                        <i class="fas fa-hospital-user"></i>
+                        <h4>Humanitarian Aid</h4>
+                        <p class="text-muted">Delivering medical supplies, clean water, and food security to vulnerable populations.</p>
+                        <a href="menu.html" class="btn-read-more">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="feature-card">
+                        <i class="fas fa-school"></i>
+                        <h4>Education for All</h4>
+                        <p class="text-muted">Building schools and providing vocational training to empower the next generation.</p>
+                        <a href="menu.html" class="btn-read-more">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Yellow Banner -->
+    <section class="yellow-bar">
+        <div class="container text-center">
+            <h4 class="mb-0">"Go into all the world and preach the gospel to all creation." — Mark 16:15</h4>
+        </div>
+    </section>
+
+    <!-- 4. Our Ministries -->
+    <section class="section-padding bg-light">
+        <div class="container text-center">
+            <div class="section-header">
+                <h2 class="title">Our Core Ministries</h2>
+                <p class="text-muted">Transforming lives through integrated programs that address both spiritual and physical needs. Our holistic approach ensures long-term impact.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="service-card">
+                        <img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&q=80&w=400" alt="Church Planting">
+                        <div class="service-content">
+                            <h5>Church Planting</h5>
+                            <p class="text-muted small">Establishing local faith communities to provide ongoing spiritual support and guidance.</p>
+                            <a href="menu.html" class="btn btn-yellow">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="service-card">
+                        <img src="https://images.unsplash.com/photo-1594708767771-a7502209ff51?auto=format&fit=crop&q=80&w=400" alt="Clean Water Project">
+                        <div class="service-content">
+                            <h5>Clean Water Project</h5>
+                            <p class="text-muted small">Drilling wells and installing filtration systems to provide safe drinking water.</p>
+                            <a href="menu.html" class="btn btn-yellow">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="service-card">
+                        <img src="https://images.unsplash.com/photo-1509099836639-18ba1795216d?auto=format&fit=crop&q=80&w=400" alt="Medical Missions">
+                        <div class="service-content">
+                            <h5>Medical Missions</h5>
+                            <p class="text-muted small">Mobilizing medical professionals to provide healthcare in underserved areas.</p>
+                            <a href="menu.html" class="btn btn-yellow">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="service-card">
+                        <img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&q=80&w=400" alt="Youth Empowerment">
+                        <div class="service-content">
+                            <h5>Youth Empowerment</h5>
+                            <p class="text-muted small">Mentorship and skills training programs for at-risk youth in urban centers.</p>
+                            <a href="menu.html" class="btn btn-yellow">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- 7. Our Latest News -->
+    <section class="section-padding bg-light">
+        <div class="container text-center">
+            <div class="section-header">
+                <h2 class="title">Missionary Updates</h2>
+                <p class="text-muted">Stay connected with the latest stories from the field. See how your support is transforming lives across the globe.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="news-card text-start">
+                        <div class="news-img">
+                            <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&q=80&w=600" alt="News" class="img-fluid">
+                            <div class="news-date">05 May 2026</div>
+                        </div>
+                        <div class="service-content">
+                            <h6 class="text-warning small">Field Report / Africa</h6>
+                            <h5 class="mb-3">A New Well Brings Hope to Village</h5>
+                            <p class="text-muted small">Over 500 residents now have access to clean, safe drinking water for the first time in decades.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="small text-muted"><i class="far fa-calendar"></i> May 2026</span>
+                                <div class="social-icons small">
+                                    <i class="fab fa-facebook-f ms-2"></i>
+                                    <i class="fab fa-twitter ms-2"></i>
+                                    <i class="fab fa-instagram ms-2"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="news-card text-start">
+                        <div class="news-img">
+                            <img src="https://images.unsplash.com/photo-1509099836639-18ba1795216d?auto=format&fit=crop&q=80&w=600" alt="News" class="img-fluid">
+                            <div class="news-date">28 April 2026</div>
+                        </div>
+                        <div class="service-content">
+                            <h6 class="text-warning small">Impact Story / Asia</h6>
+                            <h5 class="mb-3">Medical Camp Treats Over 1000 Patients</h5>
+                            <p class="text-muted small">Volunteer doctors and nurses provided essential care and medication to remote communities.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="small text-muted"><i class="far fa-calendar"></i> April 2026</span>
+                                <div class="social-icons small">
+                                    <i class="fab fa-facebook-f ms-2"></i>
+                                    <i class="fab fa-twitter ms-2"></i>
+                                    <i class="fab fa-instagram ms-2"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="news-card text-start">
+                        <div class="news-img">
+                            <img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&q=80&w=600" alt="News" class="img-fluid">
+                            <div class="news-date">15 April 2026</div>
+                        </div>
+                        <div class="service-content">
+                            <h6 class="text-warning small">Community / Domestic</h6>
+                            <h5 class="mb-3">Youth Center Opening in Downtown</h5>
+                            <p class="text-muted small">A safe space for local youth to gather, learn, and grow through our new mentorship program.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="small text-muted"><i class="far fa-calendar"></i> April 2026</span>
+                                <div class="social-icons small">
+                                    <i class="fab fa-facebook-f ms-2"></i>
+                                    <i class="fab fa-twitter ms-2"></i>
+                                    <i class="fab fa-instagram ms-2"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. Last Amazing Things Banner -->
+    <section class="yellow-bar">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div>
+                <h4 class="mb-1">Your generosity changes the world</h4>
+                <p class="mb-0 small">Join us in our mission to bring light to the darkest corners of the earth.</p>
+            </div>
+            <a href="contact.html" class="btn btn-outline-dark fw-bold px-4">Donate Today</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">Copyright © 2026 GraceFound Missions. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-0">Powered By ♥ VINSEVA</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Navbar Scroll Script -->
+    <script>
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('sticky');
+            } else {
+                navbar.classList.remove('sticky');
+            }
+        });
+    </script>
+</body>
+</html>

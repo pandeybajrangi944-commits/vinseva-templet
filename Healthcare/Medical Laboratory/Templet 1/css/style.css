@@ -1,17 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500;600&display=swap');
 
 :root {
-    --primary-color: #2c3e50; /* Dark Charcoal */
-    --accent-color: #e67e22; /* Warm Orange/Gold */
-    --bg-light: #f4f7f6; /* Soft Neutral Background */
+    --primary-color: #2b4ba7; /* Deep Blue from image */
+    --accent-color: #ffd700;  /* Yellow from image */
+    --secondary-color: #3b62d1; /* Lighter Blue */
+    --bg-light: #f8faff; 
     --bg-white: #ffffff;
-    --text-dark: #2c3e50;
-    --text-muted: #7f8c8d;
-    --border-radius: 20px;
-    --shadow-subtle: 0 10px 30px rgba(0, 0, 0, 0.05);
-    --section-padding-desktop: 100px;
-    --section-padding-mobile: 60px;
-    --transition-smooth: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    --text-dark: #1a2b5a;
+    --text-muted: #6c757d;
+    --border-radius: 8px; /* Sharper corners as seen in some image elements */
+    --shadow-subtle: 0 4px 15px rgba(0, 0, 0, 0.05);
+    --section-padding-desktop: 80px;
+    --section-padding-mobile: 50px;
+    --transition-smooth: all 0.3s ease;
 }
 
 html, body {
@@ -24,7 +25,7 @@ body {
     font-family: 'Inter', sans-serif;
     color: var(--text-dark);
     background-color: var(--bg-white);
-    line-height: 1.7;
+    line-height: 1.6;
     -webkit-font-smoothing: antialiased;
 }
 
@@ -98,53 +99,58 @@ a {
 /* Navbar */
 .navbar {
     transition: var(--transition-smooth);
-    padding: 15px 0;
-}
-
-.navbar.sticky {
-    background: var(--bg-white);
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    padding: 10px 0;
-}
-
-.navbar-brand img {
-    height: 40px;
+    padding: 20px 0;
+    background: white;
 }
 
 .nav-link {
-    font-weight: 500;
-    color: var(--primary-color) !important;
-    margin: 0 10px;
+    font-weight: 600;
+    color: var(--text-dark) !important;
+    margin: 0 15px;
+    font-size: 0.95rem;
 }
 
 .nav-link:hover, .nav-link.active {
-    color: var(--accent-color) !important;
+    color: var(--primary-color) !important;
 }
 
 .btn-cta {
-    background-color: var(--accent-color);
+    background-color: var(--primary-color);
     color: white;
-    border-radius: 50px;
-    padding: 10px 25px;
+    border-radius: 4px;
+    padding: 12px 28px;
     font-weight: 600;
     border: none;
+    transition: var(--transition-smooth);
 }
 
 .btn-cta:hover {
-    background-color: #d35400;
+    background-color: var(--secondary-color);
     color: white;
     transform: translateY(-2px);
 }
 
+.btn-yellow {
+    background-color: var(--accent-color);
+    color: var(--text-dark);
+    border-radius: 4px;
+    padding: 12px 28px;
+    font-weight: 600;
+    border: none;
+}
+
+.btn-yellow:hover {
+    background-color: #e6c200;
+}
+
 /* Hero Section */
 .hero-section {
-    height: 80vh;
+    height: 90vh;
     display: flex;
     align-items: center;
     background-size: cover;
     background-position: center;
     position: relative;
-    color: white;
 }
 
 .hero-overlay {
@@ -153,18 +159,58 @@ a {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.4));
-}
-
-.hero-content {
-    position: relative;
-    z-index: 1;
+    background: rgba(255, 255, 255, 0.1); /* Lighter overlay for clarity */
 }
 
 .hero-content h1 {
-    font-size: 3.5rem;
-    color: white;
+    font-size: 4rem;
+    color: var(--text-dark);
+    font-weight: 800;
+    line-height: 1.1;
+}
+
+.hero-content .lead {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+}
+
+/* Service Cards (Icon Boxes) */
+.service-box {
+    padding: 40px 30px;
+    text-align: center;
+    background: white;
+    border: 1px solid #eee;
+    transition: var(--transition-smooth);
+    border-radius: var(--border-radius);
+}
+
+.service-box:hover {
+    border-color: var(--primary-color);
+    box-shadow: 0 10px 30px rgba(43, 75, 167, 0.1);
+}
+
+.service-box i {
+    font-size: 2.5rem;
+    color: var(--primary-color);
     margin-bottom: 20px;
+}
+
+.service-box h5 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+/* Features List */
+.feature-list-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.feature-list-item i {
+    color: var(--primary-color);
+    margin-right: 15px;
+    font-size: 1.2rem;
 }
 
 /* Page Banner */
@@ -285,9 +331,24 @@ a {
 
 /* Footer */
 footer {
-    padding: 30px 0;
-    border-top: 1px solid #eee;
-    font-size: 0.9rem;
+    background-color: #1a2238; /* Very dark blue footer from image */
+    color: #a0aec0;
+    padding: 0px 0 20px;
+}
+
+footer h5 {
+    color: white;
+    margin-bottom: 25px;
+}
+
+footer .nav-link {
+    color: #a0aec0 !important;
+    padding: 5px 0;
+    margin: 0;
+}
+
+footer .nav-link:hover {
+    color: var(--accent-color) !important;
 }
 
 /* Gallery Grid */

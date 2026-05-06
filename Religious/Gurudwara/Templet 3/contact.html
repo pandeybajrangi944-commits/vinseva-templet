@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Gurudwara Sahib</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <div class="logo-icon me-2" style="width: 40px; height: 40px; border: 2px solid var(--primary-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--secondary-color);">
+                    <i class="fas fa-khanda"></i>
+                </div>
+                <span class="fw-bold fs-4"><span class="text-purple">GURU</span><span class="text-accent">DWARA</span></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">ABOUT</a></li>
+                    <li class="nav-item"><a class="nav-link" href="menu.html">SERVICES</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">GALLERY</a></li>
+                </ul>
+                <div class="d-flex align-items-center">
+                    <a href="contact.html" class="btn btn-cta">DONATE / SEVA</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Banner -->
+    <header class="page-banner">
+        <div class="page-banner-overlay"></div>
+        <div class="container page-banner-content py-5 text-center">
+            <h1 class="display-4 fw-bold mb-3 text-white">Contact Us</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb justify-content-center">
+                    <li class="breadcrumb-item"><a href="index.html" class="text-white opacity-75">Home</a></li>
+                    <li class="breadcrumb-item active text-white" aria-current="page">Contact</li>
+                </ol>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contact Info & Form -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row g-5">
+                <!-- Contact Info -->
+                <div class="col-lg-5">
+                    <div class="section-header mb-4">
+                        <p class="text-accent fw-bold mb-2">GET IN TOUCH</p>
+                        <h2 class="title">Contact Information</h2>
+                    </div>
+                    <p class="mb-5 text-muted">For inquiries regarding services, Langar Seva, or donations, please reach out to us. We are here to serve.</p>
+                    
+                    <div class="service-card text-start mb-4 p-4 d-flex align-items-start">
+                        <div class="service-icon ms-0 me-3 mb-0 flex-shrink-0" style="width: 60px; height: 60px; font-size: 1.5rem;">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h5 class="mb-1">Address</h5>
+                            <p class="text-muted mb-0">121 King Street, Melbourne VIC 3000, Australia</p>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card text-start mb-4 p-4 d-flex align-items-start">
+                        <div class="service-icon ms-0 me-3 mb-0 flex-shrink-0" style="width: 60px; height: 60px; font-size: 1.5rem;">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <h5 class="mb-1">Phone</h5>
+                            <p class="text-muted mb-0">+1 123 456 789</p>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card text-start mb-4 p-4 d-flex align-items-start">
+                        <div class="service-icon ms-0 me-3 mb-0 flex-shrink-0" style="width: 60px; height: 60px; font-size: 1.5rem;">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h5 class="mb-1">Email</h5>
+                            <p class="text-muted mb-0">info@gurudwara.org</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Contact Form -->
+                <div class="col-lg-7">
+                    <div class="service-card text-start p-5 h-100">
+                        <h3 class="mb-4">Send Us a Message</h3>
+                        <form>
+                            <div class="row g-4">
+                                <div class="col-md-6">
+                                    <label for="name" class="form-label small fw-bold">Name</label>
+                                    <input type="text" class="form-control rounded-pill px-4 py-3 border-light bg-light" id="name" placeholder="Your Name" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="email" class="form-label small fw-bold">Email</label>
+                                    <input type="email" class="form-control rounded-pill px-4 py-3 border-light bg-light" id="email" placeholder="Your Email" required>
+                                </div>
+                                <div class="col-12">
+                                    <label for="message" class="form-label small fw-bold">Message / Seva Request</label>
+                                    <textarea class="form-control rounded-4 px-4 py-3 border-light bg-light" id="message" rows="5" placeholder="How can we help you or how would you like to contribute?" required></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-green w-100 py-3 mt-2">SUBMIT MESSAGE</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4">
+        <div class="container">
+            <div class="text-center">
+                <p class="mb-0 text-muted small">All Rights Reserved © 2026 | Powered By <span class="text-danger">&hearts;</span> VINSEVA</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

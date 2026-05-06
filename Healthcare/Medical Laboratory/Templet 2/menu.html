@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Menu | Canteen Name</title>
+    <title>Lab Services | Mediz Lab & Diagnostics</title>
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
@@ -13,121 +13,118 @@
 </head>
 <body>
 
-    <!-- Header / Navbar -->
-    <nav class="navbar navbar-expand-lg sticky-top sticky">
+    <!-- Top Bar -->
+    <div class="top-bar d-none d-lg-block">
         <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <span class="fw-bold fs-3 text-primary">CANTEEN</span>
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <span class="me-4"><i class="fas fa-phone-alt me-2"></i> +1 (234) 567-890</span>
+                    <span class="me-4"><i class="fas fa-envelope me-2"></i> info@medizlab.com</span>
+                    <span><i class="fas fa-map-marker-alt me-2"></i> 123 Diagnostic St, London</span>
+                </div>
+                <div class="col-md-4 text-end">
+                    <a href="#" class="text-muted me-3"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-muted me-3"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-muted me-3"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="text-muted"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header / Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <i class="fas fa-flask me-2"></i>
+                <span>MEDIZ LAB</span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mx-auto text-center">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <ul class="navbar-nav ms-auto me-4 text-center">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="menu.html">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="menu.html">Tests</a></li>
                     <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                 </ul>
                 <div class="d-flex justify-content-center">
-                    <a href="contact.html" class="btn btn-cta">Contact Us</a>
+                    <a href="contact.html" class="btn btn-cta">BOOK A TEST</a>
                 </div>
             </div>
         </div>
     </nav>
 
     <!-- Page Banner -->
-    <header class="page-banner" style="background-image: url('https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&q=80&w=1920');">
+    <header class="page-banner" style="background-image: url('https://images.unsplash.com/photo-1579154235602-3c2ae2408011?auto=format&fit=crop&q=80&w=1920');">
         <div class="page-banner-overlay"></div>
         <div class="container page-banner-content">
-            <h1 class="display-4 fw-bold mb-3">Our Menu</h1>
+            <h1 class="display-4 fw-bold mb-3" style="color: white;">Our Services</h1>
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb justify-content-center">
                     <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Menu</li>
+                    <li class="breadcrumb-item active" aria-current="page">Services</li>
                 </ol>
             </nav>
         </div>
     </header>
 
-    <!-- Detailed Menu Items -->
+    <!-- Detailed Services Items -->
     <section class="section-padding bg-light">
         <div class="container">
             <div class="section-header text-center">
-                <span class="subtitle">Fresh & Healthy</span>
-                <h2 class="title">Our Detailed Menu</h2>
+                <span class="subtitle">Clinical Excellence</span>
+                <h2 class="title">Comprehensive Diagnostics</h2>
             </div>
             <div class="row g-4">
                 <div class="col-lg-4 col-md-6">
-                    <div class="custom-card">
-                        <img src="https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&q=80&w=600" alt="Egg Platter">
-                        <div class="card-body">
-                            <div class="d-flex justify-content-between align-items-center mb-2">
-                                <h4 class="mb-0">Healthy Breakfast Platter</h4>
-                                <span class="text-primary fw-bold fs-5">$12.00</span>
-                            </div>
-                            <p class="text-muted mb-0">Two eggs, whole wheat toast, avocado, and fresh fruits.</p>
-                        </div>
+                    <div class="service-card shadow-sm h-100">
+                        <i class="fas fa-vials"></i>
+                        <h4>Blood Analysis</h4>
+                        <p>Complete blood count, biochemistry, and hormone profiling with advanced automated systems.</p>
+                        <a href="#" class="read-more">View Details <i class="fas fa-arrow-right ms-1"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
-                    <div class="custom-card">
-                        <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=600" alt="Veggie Salad">
-                        <div class="card-body">
-                            <div class="d-flex justify-content-between align-items-center mb-2">
-                                <h4 class="mb-0">Fresh Veggie Salad</h4>
-                                <span class="text-primary fw-bold fs-5">$10.00</span>
-                            </div>
-                            <p class="text-muted mb-0">Seasonal vegetables with a house-made balsamic vinaigrette.</p>
-                        </div>
+                    <div class="service-card shadow-sm h-100">
+                        <i class="fas fa-dna"></i>
+                        <h4>Genomic Testing</h4>
+                        <p>Advanced DNA sequencing for hereditary conditions and personalized medical insights.</p>
+                        <a href="#" class="read-more">View Details <i class="fas fa-arrow-right ms-1"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
-                    <div class="custom-card">
-                        <img src="https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&q=80&w=600" alt="Soup">
-                        <div class="card-body">
-                            <div class="d-flex justify-content-between align-items-center mb-2">
-                                <h4 class="mb-0">Daily Special Soup</h4>
-                                <span class="text-primary fw-bold fs-5">$8.00</span>
-                            </div>
-                            <p class="text-muted mb-0">A warm bowl of our chef's daily soup special.</p>
-                        </div>
+                    <div class="service-card shadow-sm h-100">
+                        <i class="fas fa-microscope"></i>
+                        <h4>Microbiology</h4>
+                        <p>Detailed identification of pathogens and antibiotic sensitivity testing for effective treatment.</p>
+                        <a href="#" class="read-more">View Details <i class="fas fa-arrow-right ms-1"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
-                    <div class="custom-card">
-                        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&q=80&w=600" alt="Grilled Chicken">
-                        <div class="card-body">
-                            <div class="d-flex justify-content-between align-items-center mb-2">
-                                <h4 class="mb-0">Grilled Chicken Bowl</h4>
-                                <span class="text-primary fw-bold fs-5">$14.00</span>
-                            </div>
-                            <p class="text-muted mb-0">Marinated grilled chicken with brown rice and steamed veggies.</p>
-                        </div>
+                    <div class="service-card shadow-sm h-100">
+                        <i class="fas fa-heartbeat"></i>
+                        <h4>Cardiac Profile</h4>
+                        <p>Specialized tests including lipid profile and cardiac biomarkers for heart health assessment.</p>
+                        <a href="#" class="read-more">View Details <i class="fas fa-arrow-right ms-1"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
-                    <div class="custom-card">
-                        <img src="https://images.unsplash.com/photo-1541544741938-0af808871cc0?auto=format&fit=crop&q=80&w=600" alt="Quick Snacks">
-                        <div class="card-body">
-                            <div class="d-flex justify-content-between align-items-center mb-2">
-                                <h4 class="mb-0">Assorted Snacks Plate</h4>
-                                <span class="text-primary fw-bold fs-5">$9.00</span>
-                            </div>
-                            <p class="text-muted mb-0">A variety of quick bites to satisfy your cravings.</p>
-                        </div>
+                    <div class="service-card shadow-sm h-100">
+                        <i class="fas fa-shield-virus"></i>
+                        <h4>Immunology</h4>
+                        <p>Comprehensive assessment of immune system function and allergy testing panels.</p>
+                        <a href="#" class="read-more">View Details <i class="fas fa-arrow-right ms-1"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
-                    <div class="custom-card">
-                        <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&q=80&w=400" alt="Coffee">
-                        <div class="card-body">
-                            <div class="d-flex justify-content-between align-items-center mb-2">
-                                <h4 class="mb-0">Brewed Coffee</h4>
-                                <span class="text-primary fw-bold fs-5">$4.00</span>
-                            </div>
-                            <p class="text-muted mb-0">Freshly brewed high-quality coffee beans.</p>
-                        </div>
+                    <div class="service-card shadow-sm h-100">
+                        <i class="fas fa-procedures"></i>
+                        <h4>Biopsy & Cytology</h4>
+                        <p>Expert histopathology and cytology services for accurate tissue and cell diagnosis.</p>
+                        <a href="#" class="read-more">View Details <i class="fas fa-arrow-right ms-1"></i></a>
                     </div>
                 </div>
             </div>
@@ -136,32 +133,79 @@
 
     <!-- CTA Section -->
     <section class="cta-banner">
-        <div class="container">
+        <div class="container text-center">
             <div class="row justify-content-center">
                 <div class="col-lg-8">
-                    <h2>Visit Our Canteen Today</h2>
-                    <p class="lead mb-4">Enjoy fresh and delicious meals every day. We are open from 8 AM to 8 PM.</p>
-                    <a href="contact.html" class="btn btn-cta btn-lg">Contact Us Now</a>
+                    <h2 class="text-white">Accurate Results, Trusted by Thousands</h2>
+                    <p class="lead text-white-50 mb-4">Book your test today and experience the highest standards of diagnostic care with Mediz Lab.</p>
+                    <a href="contact.html" class="btn btn-light btn-lg px-5">BOOK A TEST NOW</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
+    <!-- 7. Footer -->
+    <footer class="footer-main">
         <div class="container">
-            <div class="row align-items-center text-center text-md-start">
-                <div class="col-md-6 mb-3 mb-md-0">
-                    <p class="mb-0 text-muted">&copy; 2025 Canteen Name. All rights reserved.</p>
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <a class="navbar-brand text-white d-flex align-items-center mb-4" href="index.html">
+                        <i class="fas fa-flask me-2"></i>
+                        <span>MEDIZ LAB</span>
+                    </a>
+                    <p>Providing precision diagnostic services to the community. Your health is our priority, and accuracy is our commitment. Trust Mediz Lab for all your clinical testing needs.</p>
+                    <div class="mt-4">
+                        <a href="#" class="btn btn-outline-light btn-sm me-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="btn btn-outline-light btn-sm me-2"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="btn btn-outline-light btn-sm me-2"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="btn btn-outline-light btn-sm"><i class="fab fa-instagram"></i></a>
+                    </div>
                 </div>
-                <div class="col-md-6 text-md-end">
-                    <p class="mb-0 text-muted">Powered By <span class="text-danger">&hearts;</span> VINSEVA</p>
+                <div class="col-lg-2">
+                    <h5>About</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="about.html">Our Lab</a></li>
+                        <li><a href="#">Accreditations</a></li>
+                        <li><a href="#">Research</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h5>Popular Tests</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Full Body Checkup</a></li>
+                        <li><a href="#">Genomic Screening</a></li>
+                        <li><a href="#">Hormone Profile</a></li>
+                        <li><a href="#">Infection Panel</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h5>Contact Us</h5>
+                    <ul class="list-unstyled">
+                        <li class="d-flex mb-3">
+                            <i class="fas fa-map-marker-alt me-3 mt-1"></i>
+                            <span>123 Diagnostic St, London, UK</span>
+                        </li>
+                        <li class="d-flex mb-3">
+                            <i class="fas fa-phone-alt me-3 mt-1"></i>
+                            <span>+1 (234) 567-890</span>
+                        </li>
+                        <li class="d-flex">
+                            <i class="fas fa-envelope me-3 mt-1"></i>
+                            <span>info@medizlab.com</span>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
     </footer>
+    <div class="footer-bottom">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2026 Mediz Lab & Diagnostics. All Rights Reserved.</p>
+        </div>
+    </div>
 
-    <!-- Bootstrap 5 JS -->
+    <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

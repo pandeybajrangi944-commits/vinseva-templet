@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500;600&display=swap');
+
+:root {
+    --primary-color: #002147; /* Navy Blue from image */
+    --accent-color: #fdb913; /* Golden Yellow from image */
+    --bg-light: #f8f9fa;
+    --bg-white: #ffffff;
+    --text-dark: #333333;
+    --text-muted: #666666;
+    --border-radius: 4px; /* Sharper edges like the image */
+    --shadow-subtle: 0 5px 15px rgba(0, 0, 0, 0.08);
+    --section-padding-desktop: 80px;
+    --section-padding-mobile: 50px;
+    --transition-smooth: all 0.3s ease;
+}
+
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+    position: relative;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--text-dark);
+    background-color: var(--bg-white);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+/* Top Bar */
+.top-bar {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+.top-bar i {
+    color: var(--accent-color);
+    margin-right: 8px;
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--primary-color) !important;
+    padding: 0;
+}
+
+.navbar-brand span {
+    color: white !important;
+}
+
+.nav-link {
+    font-weight: 600;
+    color: white !important;
+    padding: 25px 15px !important;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.nav-link:hover, .nav-link.active {
+    background-color: var(--accent-color);
+    color: var(--primary-color) !important;
+}
+
+.search-icon {
+    color: white;
+    padding: 0 15px;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero-section {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: white;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    text-align: left;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    max-width: 600px;
+}
+
+/* Quote Form on Hero */
+.quote-form-container {
+    background-color: white;
+    padding: 0;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    position: relative;
+    z-index: 10;
+    margin-top: -100px;
+}
+
+.quote-header {
+    background-color: var(--accent-color);
+    padding: 20px;
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+}
+
+.quote-header i {
+    font-size: 2rem;
+    margin-right: 15px;
+}
+
+.quote-header h5 {
+    margin: 0;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.quote-body {
+    padding: 30px;
+}
+
+.quote-body .form-control {
+    border: none;
+    border-bottom: 1px solid #ddd;
+    border-radius: 0;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+.btn-submit-quote {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    border: none;
+    width: 100%;
+    padding: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+/* Feature Cards (Yellow top border) */
+.feature-card {
+    background: white;
+    padding: 40px 30px;
+    text-align: center;
+    box-shadow: var(--shadow-subtle);
+    border-top: 3px solid transparent;
+    transition: var(--transition-smooth);
+    height: 100%;
+}
+
+.feature-card:hover {
+    border-top-color: var(--accent-color);
+    transform: translateY(-10px);
+}
+
+.feature-card i {
+    font-size: 3rem;
+    color: var(--accent-color);
+    margin-bottom: 20px;
+}
+
+.feature-card h4 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.btn-read-more {
+    color: var(--primary-color);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 13px;
+    border-bottom: 2px solid var(--accent-color);
+}
+
+/* Services Section */
+.service-card {
+    background: white;
+    box-shadow: var(--shadow-subtle);
+    overflow: hidden;
+    height: 100%;
+}
+
+.service-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.service-content {
+    padding: 25px;
+}
+
+.btn-yellow {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    border: none;
+    padding: 8px 25px;
+    font-weight: 700;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* Yellow Bar */
+.yellow-bar {
+    background-color: var(--accent-color);
+    padding: 20px 0;
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+/* Course Filters */
+.filter-btn {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 8px 20px;
+    margin: 5px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.filter-btn.active {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+/* News Section */
+.news-card {
+    background: white;
+    box-shadow: var(--shadow-subtle);
+    height: 100%;
+}
+
+.news-img {
+    position: relative;
+}
+
+.news-date {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background: var(--accent-color);
+    padding: 5px 15px;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+/* Footer (Navy) */
+.main-footer {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0px 0 30px;
+}
+
+.footer-title {
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.footer-title::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 30px;
+    height: 2px;
+    background: var(--accent-color);
+}
+
+.footer-links list-unstyled li {
+    margin-bottom: 12px;
+}
+
+.footer-links a {
+    color: #ccc;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    color: var(--accent-color);
+    padding-left: 5px;
+}
+
+.footer-bottom {
+    background-color: #001a38;
+    padding: 20px 0;
+    color: #888;
+    font-size: 13px;
+}
+
+/* Reusable Components */
+.section-padding {
+    padding: var(--section-padding-desktop) 0;
+}
+
+.section-header .subtitle {
+    color: var(--accent-color);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.section-header .title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.bg-navy {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.bg-navy h2 {
+    color: white;
+}

@@ -1,17 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500;600&display=swap');
 
 :root {
-    --primary-color: #2c3e50; /* Dark Charcoal */
-    --accent-color: #e67e22; /* Warm Orange/Gold */
-    --bg-light: #f4f7f6; /* Soft Neutral Background */
+    --primary-color: #d32f2f; /* Blood Red */
+    --accent-color: #b71c1c;
+    --bg-light: #fff5f5;
     --bg-white: #ffffff;
-    --text-dark: #2c3e50;
-    --text-muted: #7f8c8d;
-    --border-radius: 20px;
-    --shadow-subtle: 0 10px 30px rgba(0, 0, 0, 0.05);
-    --section-padding-desktop: 100px;
-    --section-padding-mobile: 60px;
-    --transition-smooth: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    --text-dark: #212121;
+    --text-muted: #757575;
+    --border-radius: 4px;
+    --shadow-subtle: 0 5px 15px rgba(0, 0, 0, 0.05);
+    --section-padding-desktop: 80px;
+    --section-padding-mobile: 50px;
+    --transition-smooth: all 0.3s ease;
 }
 
 html, body {
@@ -24,7 +24,7 @@ body {
     font-family: 'Inter', sans-serif;
     color: var(--text-dark);
     background-color: var(--bg-white);
-    line-height: 1.7;
+    line-height: 1.6;
     -webkit-font-smoothing: antialiased;
 }
 
@@ -35,9 +35,9 @@ img {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Poppins', sans-serif;
-    font-weight: 700;
-    color: var(--primary-color);
-    letter-spacing: -0.5px;
+    font-weight: 600;
+    color: #222;
+    letter-spacing: -0.2px;
 }
 
 a {
@@ -62,7 +62,10 @@ a {
         font-size: 1.8rem;
     }
 }
-
+.text-muted {
+    --bs-text-opacity: 1;
+    color: rgb(255 255 255 / 75%) !important;
+}
 /* Reusable Components */
 
 .section-padding {
@@ -80,25 +83,54 @@ a {
 }
 
 .section-header .subtitle {
-    text-transform: uppercase;
-    color: var(--accent-color);
-    letter-spacing: 2px;
+    color: var(--primary-color);
     font-weight: 600;
-    font-size: 0.9rem;
-    display: block;
-    margin-bottom: 10px;
+    position: relative;
+    display: inline-block;
+    padding: 0;
+    text-transform: none;
+    letter-spacing: 0;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.section-header .subtitle::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 40px;
+    height: 2px;
+    background: var(--primary-color);
+}
+
+.section-header .subtitle::before { display: none; }
+
+.section-header.text-center .subtitle::after {
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .section-header .title {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
+    font-weight: 700;
     margin-bottom: 15px;
-    position: relative;
+    color: #111;
 }
 
-/* Navbar */
+/* Navbar Updation */
+.top-bar {
+    background: #111;
+    color: white;
+    padding: 8px 0;
+    font-size: 0.85rem;
+}
+
 .navbar {
+    background: white;
+    border-bottom: 1px solid #eee;
+    padding: 20px 0;
     transition: var(--transition-smooth);
-    padding: 15px 0;
 }
 
 .navbar.sticky {
@@ -113,38 +145,40 @@ a {
 
 .nav-link {
     font-weight: 500;
-    color: var(--primary-color) !important;
+    color: #444 !important;
+    text-transform: capitalize;
     margin: 0 10px;
 }
 
 .nav-link:hover, .nav-link.active {
-    color: var(--accent-color) !important;
+    color: var(--primary-color) !important;
 }
 
 .btn-cta {
-    background-color: var(--accent-color);
+    background-color: var(--primary-color);
     color: white;
-    border-radius: 50px;
+    border-radius: 4px;
     padding: 10px 25px;
-    font-weight: 600;
+    font-weight: 500;
     border: none;
 }
 
 .btn-cta:hover {
-    background-color: #d35400;
+    background-color: #00669d;
     color: white;
     transform: translateY(-2px);
 }
 
-/* Hero Section */
+/* Hero Updation */
 .hero-section {
-    height: 80vh;
+    height: 70vh;
     display: flex;
     align-items: center;
     background-size: cover;
     background-position: center;
     position: relative;
-    color: white;
+    background-color: #f0f4f7;
+    color: #333;
 }
 
 .hero-overlay {
@@ -153,7 +187,7 @@ a {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.4));
+    background: rgba(255,255,255,0.7);
 }
 
 .hero-content {
@@ -163,8 +197,13 @@ a {
 
 .hero-content h1 {
     font-size: 3.5rem;
-    color: white;
+    color: #111;
+    font-weight: 700;
     margin-bottom: 20px;
+}
+
+.hero-content p {
+    color: #555;
 }
 
 /* Page Banner */
@@ -271,23 +310,102 @@ a {
 
 /* CTA Banner */
 .cta-banner {
-    background-color: var(--primary-color);
-    color: white;
-    padding: 80px 0;
+    background: url('https://images.unsplash.com/photo-1579154235602-3c35bd255263?auto=format&fit=crop&q=80&w=1920') center/cover no-repeat;
+    position: relative;
+    padding: 100px 0;
     text-align: center;
+    color: white;
+}
+
+.cta-banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(211, 47, 47, 0.9); /* Red Overlay */
+}
+
+.cta-banner .container {
+    position: relative;
+    z-index: 1;
 }
 
 .cta-banner h2 {
     color: white;
-    font-size: 2.5rem;
-    margin-bottom: 15px;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
 }
 
-/* Footer */
+.cta-banner p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    margin-bottom: 40px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-cta-light {
+    background-color: white;
+    color: var(--primary-color);
+    border-radius: 4px;
+    padding: 15px 40px;
+    font-weight: 600;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: var(--transition-smooth);
+}
+
+.btn-cta-light:hover {
+    background-color: #f8f8f8;
+    color: var(--accent-color);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* Pricing/Rates Cards */
+.rate-card {
+    background: #f8fafd;
+    padding: 30px;
+    border: 1px solid #e1e8ed;
+    text-align: center;
+}
+
+.rate-card h3 {
+    font-size: 3rem;
+    color: #333;
+}
+
+.rate-card .price {
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+/* Footer Updation */
 footer {
-    padding: 30px 0;
-    border-top: 1px solid #eee;
+    background: #111;
+    color: #999;
+    padding: 60px 0 20px;
+    border: none;
     font-size: 0.9rem;
+}
+
+footer h5 {
+    color: white;
+    margin-bottom: 25px;
+}
+
+footer a {
+    color: #999;
+}
+
+footer a:hover {
+    color: white;
 }
 
 /* Gallery Grid */
