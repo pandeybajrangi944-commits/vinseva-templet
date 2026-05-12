@@ -9,8 +9,8 @@
     --text-muted: #666666;
     --border-radius: 4px; /* Sharper edges like the image */
     --shadow-subtle: 0 5px 15px rgba(0, 0, 0, 0.08);
-    --section-padding-desktop: 80px;
-    --section-padding-mobile: 50px;
+    --section-padding-desktop: 100px;
+    --section-padding-mobile: 60px;
     --transition-smooth: all 0.3s ease;
 }
 
@@ -117,6 +117,27 @@ h1, h2, h3, h4, h5, h6 {
 .hero-content p {
     font-size: 1.2rem;
     max-width: 600px;
+}
+
+/* Form Controls */
+.form-control, .form-select {
+    border: 1px solid #e1e1e1;
+    border-radius: var(--border-radius);
+    padding: 12px 15px;
+    font-size: 15px;
+    transition: var(--transition-smooth);
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 0.25rem rgba(253, 185, 19, 0.1);
+}
+
+.form-label {
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 8px;
+    font-size: 14px;
 }
 
 /* Quote Form on Hero */
@@ -237,7 +258,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Yellow Bar */
 .yellow-bar {
     background-color: var(--accent-color);
-    padding: 20px 0;
+    padding: 60px 0;
     color: var(--primary-color);
     font-weight: 700;
 }
@@ -327,9 +348,112 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 13px;
 }
 
+/* Page Banner */
+.page-banner {
+    padding: 120px 0;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: white;
+    text-align: center;
+}
+
+.page-banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+}
+
+.page-banner-content {
+    position: relative;
+    z-index: 1;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    color: white !important;
+}
+
+.breadcrumb-item a {
+    color: var(--accent-color) !important;
+    text-decoration: none;
+}
+
+.breadcrumb-item.active {
+    color: white !important;
+}
+
+/* Custom Cards (Used in Ministries/Services) */
+.custom-card {
+    background: white;
+    box-shadow: var(--shadow-subtle);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    height: 100%;
+    transition: var(--transition-smooth);
+    display: flex;
+    flex-direction: column;
+}
+
+.custom-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.custom-card img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+}
+
+.custom-card .card-body {
+    padding: 30px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.custom-card .card-body h4 {
+    font-size: 1.25rem;
+    margin-bottom: 15px;
+    color: var(--primary-color);
+}
+
+.custom-card .card-body p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+/* Gallery Styles */
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-subtle);
+    height: 300px; /* Fixed height for consistency */
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition-smooth);
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
 /* Reusable Components */
 .section-padding {
     padding: var(--section-padding-desktop) 0;
+}
+
+section {
+    position: relative;
 }
 
 .section-header .subtitle {

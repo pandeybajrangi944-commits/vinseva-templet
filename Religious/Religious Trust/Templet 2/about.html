@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us | Canteen Name</title>
+    <title>Our Path | St. Benedict Monastery</title>
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
@@ -14,95 +14,81 @@
 <body>
 
     <!-- Header / Navbar -->
-    <nav class="navbar navbar-expand-lg sticky-top sticky">
+    <nav class="navbar navbar-expand-lg">
         <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <span class="fw-bold fs-3 text-primary">CANTEEN</span>
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <span>ST. BENEDICT</span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mx-auto text-center">
+                <ul class="navbar-nav mx-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
-                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="about.html">Our Path</a></li>
+                    <li class="nav-item"><a class="nav-link" href="menu.html">Daily Life</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Sanctuary</a></li>
                 </ul>
-                <div class="d-flex justify-content-center">
-                    <a href="contact.html" class="btn btn-cta">Contact Us</a>
+                <div class="d-flex">
+                    <a href="contact.html" class="btn btn-cta">Visit Us</a>
                 </div>
             </div>
         </div>
     </nav>
 
     <!-- Page Banner -->
-    <header class="page-banner" style="background-image: url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&q=80&w=1920');">
-        <div class="page-banner-overlay"></div>
-        <div class="container page-banner-content">
-            <h1 class="display-4 fw-bold mb-3">About Us</h1>
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb justify-content-center">
-                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">About</li>
-                </ol>
-            </nav>
+    <section class="hero-section" style="height: 60vh; min-height: 500px; background-image: url('https://plus.unsplash.com/premium_photo-1664372356603-58619a1709c1?auto=format&fit=crop&q=80&w=1920');">
+        <div class="container hero-content text-center">
+            <h1 class="display-3">Our Path</h1>
+            <p class="lead mx-auto">A journey of faith and devotion</p>
         </div>
-    </header>
+        <!-- Wavy Divider -->
+        <div class="wave-divider">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+        </div>
+    </section>
 
     <!-- Company Overview -->
     <section class="section-padding">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-6 mb-4 mb-lg-0">
-                    <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&q=80&w=1000" alt="Our Canteen" class="img-fluid rounded shadow">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <div class="about-img-wrapper">
+                        <img src="https://plus.unsplash.com/premium_photo-1664372356603-58619a1709c1?auto=format&fit=crop&q=80&w=1000" alt="Monastery History" class="img-fluid">
+                    </div>
                 </div>
                 <div class="col-lg-6 ps-lg-5">
-                    <div class="section-header mb-4">
-                        <span class="subtitle">Our Story</span>
-                        <h2 class="title">Decades of Serving Quality Food</h2>
+                    <div class="section-title text-start mb-4">
+                        <span>History & Heritage</span>
+                        <h2>A Legacy of Devotion</h2>
                     </div>
-                    <p class="mb-4">Founded with a passion for fresh food, our canteen has been a staple in the community for years. We started as a small kitchen and have grown into a beloved cafeteria where people gather to enjoy delicious meals and good company.</p>
-                    <p class="mb-0">We believe that everyone deserves access to healthy, affordable, and tasty food. Our journey has been one of continuous improvement, always seeking better ingredients and refining our recipes to serve you better.</p>
+                    <p class="mb-4 text-muted">Founded in the early 20th century, St. Benedict Monastery has served as a sanctuary for those seeking a deeper spiritual connection. Our community of brothers follows the Rule of Saint Benedict, a timeless guide for living a life of humility, obedience, and prayer.</p>
+                    <p class="mb-5 text-muted">Through wars and peace, our walls have stood as a testament to the enduring power of faith. We continue to welcome all who come to our gates, offering a place of rest for the weary and a path of discovery for the seeker.</p>
+                    <a href="contact.html" class="btn btn-cta">Plan a Visit</a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Mission & Vision -->
-    <section class="section-padding bg-light">
+    <section class="section-padding bg-soft">
         <div class="container">
             <div class="row g-4">
                 <div class="col-lg-6">
-                    <div class="custom-card card-body h-100">
-                        <div class="feature-icon mb-3">
-                            <i class="fas fa-bullseye"></i>
-                        </div>
-                        <h3 class="mb-3">Our Mission</h3>
-                        <p class="mb-0">Our mission is to serve fresh, high-quality, and affordable meals every day. We strive to create a welcoming environment where our customers can enjoy their food and feel at home.</p>
+                    <div class="feature-card text-start">
+                        <div class="feature-icon-wrapper ms-0"><i class="fas fa-cross"></i></div>
+                        <h3 class="mb-4">Our Calling</h3>
+                        <p class="mb-0 text-muted">Our calling is to seek God in the common life, through common prayer and common work. We strive to be a sign of God's presence in the world, living in harmony with each other and the creation.</p>
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <div class="custom-card card-body h-100">
-                        <div class="feature-icon mb-3">
-                            <i class="fas fa-eye"></i>
-                        </div>
-                        <h3 class="mb-3">Our Vision</h3>
-                        <p class="mb-0">Our vision is to become the most loved and trusted canteen in the region, known for our commitment to excellence, hygiene, and community well-being.</p>
+                    <div class="feature-card text-start">
+                        <div class="feature-icon-wrapper ms-0"><i class="fas fa-lightbulb"></i></div>
+                        <h3 class="mb-4">Our Vision</h3>
+                        <p class="mb-0 text-muted">We envision a world where the values of silence, hospitality, and stewardship are cherished. Our monastery aims to be a beacon of hope and a center for spiritual renewal for the wider community.</p>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="cta-banner">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <h2>Visit Our Canteen Today</h2>
-                    <p class="lead mb-4">Enjoy fresh and delicious meals every day. We are open from 8 AM to 8 PM.</p>
-                    <a href="contact.html" class="btn btn-cta btn-lg">Contact Us Now</a>
                 </div>
             </div>
         </div>
@@ -111,18 +97,21 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <div class="row align-items-center text-center text-md-start">
-                <div class="col-md-6 mb-3 mb-md-0">
-                    <p class="mb-0 text-muted">&copy; 2025 Canteen Name. All rights reserved.</p>
-                </div>
-                <div class="col-md-6 text-md-end">
-                    <p class="mb-0 text-muted">Powered By <span class="text-danger">&hearts;</span> VINSEVA</p>
-                </div>
-            </div>
+            <p>ALL RIGHT RESERVED &copy; 2026 ST. BENEDICT MONASTERY | POWERED BY ♥ VINSEVA</p>
         </div>
     </footer>
 
     <!-- Bootstrap 5 JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('sticky');
+            } else {
+                navbar.classList.remove('sticky');
+            }
+        });
+    </script>
 </body>
 </html>

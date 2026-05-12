@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Canteen Name | Fresh & Delicious Meals</title>
+    <title>St. Benedict Monastery | A Path to Serenity</title>
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
@@ -14,195 +14,243 @@
 <body>
 
     <!-- Header / Navbar -->
-    <nav class="navbar navbar-expand-lg sticky-top">
+    <nav class="navbar navbar-expand-lg">
         <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <!-- Replace with real logo if available -->
-                <span class="fw-bold fs-3 text-primary">CANTEEN</span>
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <span class="text-orange">ST. BENEDICT</span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mx-auto text-center">
+                <ul class="navbar-nav mx-auto">
                     <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
-                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">Our Path</a></li>
+                    <li class="nav-item"><a class="nav-link" href="menu.html">Daily Life</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Sanctuary</a></li>
                 </ul>
-                <div class="d-flex justify-content-center">
-                    <a href="contact.html" class="btn btn-cta">Contact Us</a>
+                <div class="d-flex">
+                    <a href="contact.html" class="btn btn-cta">Visit Us</a>
                 </div>
             </div>
         </div>
     </nav>
 
     <!-- 1. Hero Section -->
-    <section class="hero-section" style="background-image: url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&q=80&w=1920');">
-        <div class="hero-overlay"></div>
-        <div class="container hero-content text-center">
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <h1 class="display-3">Delicious Meals, Freshly Served Daily</h1>
-                    <p class="lead mb-4">Experience the best cafeteria food with fresh ingredients and a welcoming atmosphere. From breakfast to dinner, we have you covered.</p>
-                    <div class="d-flex justify-content-center gap-3">
-                        <a href="menu.html" class="btn btn-cta btn-lg">View Menu</a>
-                        <a href="contact.html" class="btn btn-outline-light btn-lg rounded-pill px-4">Visit Us</a>
+    <section class="hero-section">
+        <!-- Background Circles -->
+        <div class="bg-shape-circle" style="width: 300px; height: 300px; top: -50px; left: -50px;"></div>
+        <div class="bg-shape-circle" style="width: 150px; height: 150px; bottom: 100px; left: 10%; opacity: 0.3;"></div>
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 hero-content">
+                    <span class="badge bg-white text-primary-color px-3 py-2 mb-3 fw-bold rounded-pill">Welcome to St. Benedict Monastery</span>
+                    <h1 class="display-1">In Silence, We Find Peace</h1>
+                    <p>Experience the ancient tradition of monastic life, a journey of prayer, work, and spiritual contemplation.</p>
+                    <div class="d-flex gap-3">
+                        <a href="about.html" class="btn btn-cta">Discover Our Story <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 2. About Preview -->
-    <section class="section-padding">
+    <!-- 2. Feature Section (Grid of 4) -->
+    <section class="py-5" style="margin-top: -80px; position: relative; z-index: 10;">
         <div class="container">
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-dove"></i></div>
+                        <h5>Daily Liturgy</h5>
+                        <p class="small text-muted mb-0">Spiritual guidance and communal prayer sessions.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-hands"></i></div>
+                        <h5>Handcrafted</h5>
+                        <p class="small text-muted mb-0">Artisanal products made by the brothers.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-heart"></i></div>
+                        <h5>Community</h5>
+                        <p class="small text-muted mb-0">A life of prayer, work, and contemplation.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-bell"></i></div>
+                        <h5>Prayer</h5>
+                        <p class="small text-muted mb-0">Open to all seekers of silence and peace.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. About Section -->
+    <section class="py-5">
+        <div class="container py-5">
             <div class="row align-items-center">
-                <div class="col-lg-6 mb-4 mb-lg-0">
-                    <div class="image-card-overlay">
-                        <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&q=80&w=1000" alt="Canteen Interior" class="img-fluid rounded shadow">
+                <div class="col-lg-6">
+                    <div class="position-relative">
+                        <img src="https://images.unsplash.com/photo-1645343232948-9ddb679f1f1f?auto=format&fit=crop&q=80&w=1000" alt="Monastery" class="img-fluid rounded-3 shadow-lg">
+                        <div class="position-absolute top-0 start-0 m-4 bg-accent-color text-white p-3 rounded shadow" style="background: var(--accent-color);">
+                            <h3 class="mb-0 fw-bold">20+</h3>
+                            <small class="text-uppercase">Years of Experience</small>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-6 ps-lg-5">
-                    <div class="section-header mb-4">
-                        <span class="subtitle">About Our Canteen</span>
-                        <h2 class="title">A Place for Fresh Food and Great Conversations</h2>
-                    </div>
-                    <p class="mb-4">We are dedicated to providing the highest quality meals at affordable prices. Our team of experienced chefs ensures that every dish is prepared with love and the freshest ingredients available.</p>
-                    
-                    <div class="row g-4 mb-4">
-                        <div class="col-sm-6">
-                            <div class="d-flex align-items-center">
-                                <i class="fas fa-leaf feature-icon me-3"></i>
-                                <h6 class="mb-0">Fresh Ingredients</h6>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="d-flex align-items-center">
-                                <i class="fas fa-tag feature-icon me-3"></i>
-                                <h6 class="mb-0">Affordable Meals</h6>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="d-flex align-items-center">
-                                <i class="fas fa-broom feature-icon me-3"></i>
-                                <h6 class="mb-0">Clean Kitchen</h6>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="d-flex align-items-center">
-                                <i class="fas fa-bolt feature-icon me-3"></i>
-                                <h6 class="mb-0">Quick Service</h6>
-                            </div>
-                        </div>
-                    </div>
-                    <a href="about.html" class="btn btn-cta">Read More</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 3. Menu Highlights -->
-    <section class="section-padding bg-light">
-        <div class="container text-center">
-            <div class="section-header">
-                <span class="subtitle">Our Specials</span>
-                <h2 class="title">Menu Highlights</h2>
-            </div>
-            <div class="row g-4">
-                <div class="col-lg-4 col-md-6">
-                    <div class="image-card-overlay">
-                        <img src="https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?auto=format&fit=crop&q=80&w=600" alt="Breakfast Items" class="img-fluid">
-                        <div class="overlay-text text-start">
-                            <h4>Breakfast Items</h4>
-                            <p class="mb-0">Freshly brewed coffee & pastries</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="image-card-overlay">
-                        <img src="https://images.unsplash.com/photo-1541544741938-0af808871cc0?auto=format&fit=crop&q=80&w=600" alt="Popular Snacks" class="img-fluid">
-                        <div class="overlay-text text-start">
-                            <h4>Popular Snacks</h4>
-                            <p class="mb-0">Quick bites for your break</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-12">
-                    <div class="image-card-overlay">
-                        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&q=80&w=600" alt="Lunch Specials" class="img-fluid">
-                        <div class="overlay-text text-start">
-                            <h4>Lunch Specials</h4>
-                            <p class="mb-0">Healthy and hearty meals</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 4. Why Choose Us -->
-    <section class="section-padding">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 order-lg-1">
-                    <div class="section-header mb-4">
-                        <span class="subtitle">Our Features</span>
-                        <h2 class="title">Why Choose Our Canteen?</h2>
-                    </div>
-                    <p class="mb-4">We believe that a good meal can brighten anyone's day. That's why we focus on quality, hygiene, and affordability.</p>
-                    
-                    <ul class="list-unstyled">
-                        <li class="mb-4">
-                            <div class="d-flex align-items-start">
-                                <div class="bg-primary text-white rounded-circle p-2 me-3" style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;">
-                                    <i class="fas fa-utensils"></i>
-                                </div>
-                                <div>
-                                    <h5 class="mb-1">Freshly Cooked Meals</h5>
-                                    <p class="text-muted mb-0">Our meals are prepared fresh every single day, never frozen or pre-packaged.</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="mb-4">
-                            <div class="d-flex align-items-start">
-                                <div class="bg-primary text-white rounded-circle p-2 me-3" style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;">
-                                    <i class="fas fa-wallet"></i>
-                                </div>
-                                <div>
-                                    <h5 class="mb-1">Affordable Prices</h5>
-                                    <p class="text-muted mb-0">High-quality food doesn't have to be expensive. We offer the best value for your money.</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="mb-4">
-                            <div class="d-flex align-items-start">
-                                <div class="bg-primary text-white rounded-circle p-2 me-3" style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;">
-                                    <i class="fas fa-shield-alt"></i>
-                                </div>
-                                <div>
-                                    <h5 class="mb-1">Hygienic Kitchen</h5>
-                                    <p class="text-muted mb-0">We maintain the highest standards of cleanliness and food safety in our kitchen.</p>
-                                </div>
-                            </div>
-                        </li>
+                    <span class="badge-green">About Us</span>
+                    <h2 class="display-5 fw-bold mb-4">Welcome to St. Benedict Monastery</h2>
+                    <p class="text-muted mb-4">Experience the ancient tradition of monastic life, a journey of prayer, work, and spiritual contemplation. Our community is built upon the Rule of Saint Benedict, emphasizing the balance between spiritual devotion and meaningful labor.</p>
+                    <ul class="list-unstyled mb-4">
+                        <li class="mb-2"><i class="fas fa-check-circle text-primary-color me-2"></i> Spiritual guidance and communal prayer</li>
+                        <li class="mb-2"><i class="fas fa-check-circle text-primary-color me-2"></i> Artisanal products made by the brothers</li>
+                        <li class="mb-2"><i class="fas fa-check-circle text-primary-color me-2"></i> Silent retreats and meditation sessions</li>
                     </ul>
-                </div>
-                <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0">
-                    <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&q=80&w=1000" alt="Kitchen Serving" class="img-fluid rounded shadow-lg">
+                    <div class="d-flex align-items-center gap-3">
+                        <a href="about.html" class="btn btn-green">Read More</a>
+                        <div class="d-flex align-items-center gap-2">
+                            <img src="https://plus.unsplash.com/premium_photo-1733342422588-c2fc9e279836?auto=format&fit=crop&q=80&w=100" alt="Founder" class="rounded-circle" width="50" height="50">
+                            <div>
+                                <h6 class="mb-0">St. Benedict</h6>
+                                <small class="text-muted">Founder</small>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 7. CTA Banner -->
-    <section class="cta-banner">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <h2>Visit Our Canteen Today</h2>
-                    <p class="lead mb-4">Enjoy fresh and delicious meals every day. We are open from 8 AM to 8 PM.</p>
-                    <a href="contact.html" class="btn btn-cta btn-lg">Contact Us Now</a>
+    <!-- 4. CTA Section (Green) -->
+    <section class="py-5 bg-dark-green text-center text-white position-relative overflow-hidden">
+        <div class="bg-shape-circle" style="width: 200px; height: 200px; top: -100px; right: -50px;"></div>
+        <div class="container py-4 position-relative z-index-2">
+            <h2 class="fw-bold mb-4">Have You Any Question We Are 24 Hours Support</h2>
+            <a href="contact.html" class="btn btn-white bg-white text-primary-color px-4 py-2 fw-bold">Contact Us</a>
+        </div>
+    </section>
+
+    <!-- 5. Services Section (Grid of 6) -->
+    <section class="py-5 bg-light-bg">
+        <div class="container py-5 text-center">
+            <span class="badge-green">Our Path</span>
+            <h2 class="display-6 fw-bold mb-5">Provide Worldwide Services</h2>
+            <div class="row g-4 text-start">
+                <div class="col-lg-3 col-md-6">
+                    <div class="service-item">
+                        <i class="fas fa-pray fa-2x text-primary-color mb-3"></i>
+                        <h5>Daily Liturgy</h5>
+                        <p class="small text-muted">Spiritual guidance and communal prayer sessions.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="service-item">
+                        <i class="fas fa-book-open fa-2x text-primary-color mb-3"></i>
+                        <h5>Study Path</h5>
+                        <p class="small text-muted">Ancient texts and modern spiritual philosophy.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="service-item">
+                        <i class="fas fa-leaf fa-2x text-primary-color mb-3"></i>
+                        <h5>Nature Work</h5>
+                        <p class="small text-muted">Organic gardening and sustainable living.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="service-item">
+                        <i class="fas fa-music fa-2x text-primary-color mb-3"></i>
+                        <h5>Sacred Music</h5>
+                        <p class="small text-muted">Gregorian chants and traditional choir.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Projects Section -->
+    <section class="py-5">
+        <div class="container py-5 text-center">
+            <span class="badge-green">Our Projects</span>
+            <h2 class="display-6 fw-bold mb-5">Introduce Our Project</h2>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="project-card">
+                        <img src="https://plus.unsplash.com/premium_photo-1664372356603-58619a1709c1?auto=format&fit=crop&q=80&w=600" alt="Project">
+                        <div class="project-info">
+                            <h6 class="mb-0">Silent Retreat</h6>
+                            <small class="text-primary-color">Spiritual</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="project-card">
+                        <img src="https://images.unsplash.com/photo-1527266646048-9c840858b0c3?auto=format&fit=crop&q=80&w=600" alt="Project">
+                        <div class="project-info">
+                            <h6 class="mb-0">Artisanal Bakery</h6>
+                            <small class="text-primary-color">Community</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="project-card">
+                        <img src="https://images.unsplash.com/photo-1645343232948-9ddb679f1f1f?auto=format&fit=crop&q=80&w=600" alt="Project">
+                        <div class="project-info">
+                            <h6 class="mb-0">Gardening</h6>
+                            <small class="text-primary-color">Nature</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="project-card">
+                        <img src="https://plus.unsplash.com/premium_photo-1733342422588-c2fc9e279836?auto=format&fit=crop&q=80&w=600" alt="Project">
+                        <div class="project-info">
+                            <h6 class="mb-0">Holy Library</h6>
+                            <small class="text-primary-color">Study</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. Testimonial Section -->
+    <section class="py-5 bg-light-bg">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <span class="badge-green">Testimonials</span>
+                    <h2 class="display-6 fw-bold mb-4">Don't Hesitate Contact Us For Better Help & Services</h2>
+                    <div class="testimonial-box mb-4">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                        <p class="mb-4">"Our community is built upon the Rule of Saint Benedict, emphasizing the balance between spiritual devotion and meaningful labor. We invite you to step away from the noise of the world and rediscover the quiet strength within."</p>
+                        <div class="d-flex align-items-center gap-3">
+                            <img src="https://plus.unsplash.com/premium_photo-1676994134712-38ec7f99301f?auto=format&fit=crop&q=80&w=100" alt="Guest" class="rounded-circle" width="50" height="50">
+                            <div>
+                                <h6 class="mb-0">Brother Thomas</h6>
+                                <div class="text-warning small"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 ps-lg-5">
+                    <div class="bg-white p-5 rounded-3 shadow-lg">
+                        <h4 class="fw-bold mb-4">Get A Quote</h4>
+                        <form>
+                            <div class="mb-3"><input type="text" class="form-control" placeholder="Your Name"></div>
+                            <div class="mb-3"><input type="email" class="form-control" placeholder="Your Email"></div>
+                            <div class="mb-3"><textarea class="form-control" rows="4" placeholder="Your Message"></textarea></div>
+                            <button type="submit" class="btn btn-green w-100">Send Message</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
@@ -211,14 +259,7 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <div class="row align-items-center text-center text-md-start">
-                <div class="col-md-6 mb-3 mb-md-0">
-                    <p class="mb-0 text-muted">&copy; 2025 Canteen Name. All rights reserved.</p>
-                </div>
-                <div class="col-md-6 text-md-end">
-                    <p class="mb-0 text-muted">Powered By <span class="text-danger">&hearts;</span> VINSEVA</p>
-                </div>
-            </div>
+            <p>ALL RIGHT RESERVED &copy; 2026 ST. BENEDICT MONASTERY | POWERED BY ♥ VINSEVA</p>
         </div>
     </footer>
 

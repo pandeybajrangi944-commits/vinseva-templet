@@ -118,41 +118,43 @@
                 
                 <!-- Contact Form -->
                 <div class="col-lg-7">
-                    <div class="custom-card card-body shadow-lg">
-                        <h3 class="mb-4">Send an Inquiry</h3>
-                        <form>
-                            <div class="row g-3">
-                                <div class="col-md-6">
-                                    <label for="name" class="form-label">Full Name</label>
-                                    <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                    <div class="custom-card shadow-lg">
+                        <div class="card-body p-4 p-md-5">
+                            <h3 class="mb-4">Send an Inquiry</h3>
+                            <form>
+                                <div class="row g-4">
+                                    <div class="col-md-6">
+                                        <label for="name" class="form-label">Full Name</label>
+                                        <input type="text" class="form-control" id="name" placeholder="Enter your full name" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="email" class="form-label">Email Address</label>
+                                        <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="phone" class="form-label">Phone Number</label>
+                                        <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="subject" class="form-label">Area of Interest</label>
+                                        <select class="form-select" id="subject">
+                                            <option selected disabled>Select Interest</option>
+                                            <option value="1">Volunteering</option>
+                                            <option value="2">Donation/Sponsorship</option>
+                                            <option value="3">Prayer Support</option>
+                                            <option value="4">General Inquiry</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="message" class="form-label">Message/Prayer Request</label>
+                                        <textarea class="form-control" id="message" rows="5" placeholder="How can we help you?" required></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        <button type="submit" class="btn btn-yellow btn-lg w-100 py-3 mt-2">Submit Request</button>
+                                    </div>
                                 </div>
-                                <div class="col-md-6">
-                                    <label for="email" class="form-label">Email Address</label>
-                                    <input type="email" class="form-control" id="email" placeholder="Your Email" required>
-                                </div>
-                                <div class="col-md-6">
-                                    <label for="phone" class="form-label">Phone Number</label>
-                                    <input type="tel" class="form-control" id="phone" placeholder="Your Phone Number">
-                                </div>
-                                <div class="col-md-6">
-                                    <label for="subject" class="form-label">Area of Interest</label>
-                                    <select class="form-select" id="subject">
-                                        <option selected>Select Interest</option>
-                                        <option value="1">Volunteering</option>
-                                        <option value="2">Donation/Sponsorship</option>
-                                        <option value="3">Prayer Support</option>
-                                        <option value="4">General Inquiry</option>
-                                    </select>
-                                </div>
-                                <div class="col-12">
-                                    <label for="message" class="form-label">Message/Prayer Request</label>
-                                    <textarea class="form-control" id="message" rows="5" placeholder="How can we help you?" required></textarea>
-                                </div>
-                                <div class="col-12 text-end">
-                                    <button type="submit" class="btn btn-yellow btn-lg px-5">Submit Request</button>
-                                </div>
-                            </div>
-                        </form>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -160,7 +162,7 @@
     </section>
 
     <!-- Google Map -->
-    <section class="section-padding py-0">
+    <section class="section-padding">
         <div class="container-fluid px-0">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.1422937950147!2d-73.98731968459377!3d40.75889497932681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25855c6480299%3A0x55194ec5a1ae072e!2sTimes%20Square!5e0!3m2!1sen!2sus!4v1625573423456!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
