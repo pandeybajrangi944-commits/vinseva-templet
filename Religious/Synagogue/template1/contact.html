@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Contact Beth Shalom Synagogue — membership, services, events, and general information.">
+  <title>Beth Shalom Synagogue | Contact Us</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg fixed-top navbar-custom">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/logo.png" alt="Logo" class="navbar-logo me-2">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto text-center">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="events.html">Worship</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Community</a></li>
+        </ul>
+        <div class="d-flex justify-content-center">
+          <a href="contact.html" class="btn btn-cta">Donate Now</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <header class="page-banner"
+    style="background-image: url('https://images.unsplash.com/photo-1611526055571-c7838bcc183c?auto=format&fit=crop&w=1920&q=80');">
+    <div class="page-banner-overlay"></div>
+    <div class="container page-banner-content">
+      <h1 class="display-4 fw-bold mb-3">Contact Us</h1>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb justify-content-center">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Contact</li>
+        </ol>
+      </nav>
+    </div>
+  </header>
+
+  <section class="section-padding">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-5">
+          <div class="section-header mb-4">
+            <span class="subtitle">Get In Touch</span>
+            <h2 class="title reveal">Reach Out to Us</h2>
+          </div>
+          <p class="mb-5 reveal" data-reveal-delay="80">Have a question about services, membership, or upcoming events?
+            Send us a message and our team will gladly assist you.</p>
+
+          <div class="d-flex align-items-start mb-4">
+            <div class="icon-circle icon-circle-md bg-primary text-white me-3">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div>
+              <h5 class="mb-1">Address</h5>
+              <p class="text-muted mb-0">123 Shalom Way, New York, NY 10018</p>
+            </div>
+          </div>
+
+          <div class="d-flex align-items-start mb-4">
+            <div class="icon-circle icon-circle-md bg-primary text-white me-3">
+              <i class="fas fa-phone"></i>
+            </div>
+            <div>
+              <h5 class="mb-1">Phone</h5>
+              <p class="text-muted mb-0">+1 (212) 555-1836</p>
+            </div>
+          </div>
+
+          <div class="d-flex align-items-start mb-4">
+            <div class="icon-circle icon-circle-md bg-primary text-white me-3">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div>
+              <h5 class="mb-1">Email</h5>
+              <p class="text-muted mb-0">shalom@bethshalom.org</p>
+            </div>
+          </div>
+
+          <div class="d-flex align-items-start">
+            <div class="icon-circle icon-circle-md bg-primary text-white me-3">
+              <i class="fas fa-clock"></i>
+            </div>
+            <div>
+              <h5 class="mb-1">Office Hours</h5>
+              <p class="text-muted mb-0">Mon - Thu: 9:00 AM - 5:00 PM<br>Fri: 9:00 AM - 2:00 PM</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-7">
+          <div class="custom-card p-4 p-lg-5 shadow-lg h-auto border-0">
+            <h3 class="mb-4">Send a Message</h3>
+            <form id="contact-form" action="#" method="post" data-validate="contact" novalidate>
+              <div class="row g-4">
+                <div class="col-md-6">
+                  <label for="name" class="form-label">Name</label>
+                  <input type="text" class="form-control" name="name" id="name" placeholder="Your Name" required>
+                  <div class="invalid-feedback">Please enter your name.</div>
+                </div>
+                <div class="col-md-6">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                  <div class="invalid-feedback">Please enter a valid email.</div>
+                </div>
+                <div class="col-md-6">
+                  <label for="phone" class="form-label">Phone</label>
+                  <input type="tel" class="form-control" name="phone" id="phone" placeholder="+1 (___) ___-____"
+                    required>
+                  <div class="invalid-feedback">Please enter your phone number.</div>
+                </div>
+                <div class="col-md-6">
+                  <label for="subject" class="form-label">Subject</label>
+                  <input type="text" class="form-control" name="subject" id="subject"
+                    placeholder="Membership / Pastoral Care / Event" required>
+                  <div class="invalid-feedback">Please enter a subject.</div>
+                </div>
+                <div class="col-md-6">
+                  <label for="date" class="form-label">Date (if applicable)</label>
+                  <input type="date" class="form-control" name="date" id="date">
+                </div>
+                <div class="col-md-6">
+                  <label for="inquiryType" class="form-label">Inquiry Type</label>
+                  <select class="form-select" name="inquiryType" id="inquiryType" required>
+                    <option value="" selected disabled>Select inquiry type</option>
+                    <option>General Inquiry</option>
+                    <option>Membership</option>
+                    <option>Life Cycle Event</option>
+                    <option>Pastoral Care</option>
+                    <option>Religious School</option>
+                  </select>
+                  <div class="invalid-feedback">Please choose an inquiry type.</div>
+                </div>
+                <div class="col-12">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea class="form-control" name="message" id="message" rows="5"
+                    placeholder="How can we help you today?" required></textarea>
+                  <div class="invalid-feedback">Please add a short message.</div>
+                </div>
+                <div class="col-12 text-end mt-4">
+                  <button type="submit" class="btn btn-cta btn-lg px-5">Send Message</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-padding py-0">
+    <div class="container-fluid px-0">
+      <iframe class="map-embed" src="https://www.google.com/maps?q=New%20York&output=embed" width="100%" height="450"
+        allowfullscreen="" loading="lazy" title="Map"></iframe>
+    </div>
+  </section>
+
+  <section class="cta-banner">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <h2>Life Cycle Events</h2>
+          <p class="lead mb-4">Planning a Bar/Bat Mitzvah, wedding, or baby naming? Let us help you celebrate.</p>
+          <a href="#contact-form" class="btn btn-cta btn-lg">Request Info</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="row align-items-center text-center text-md-start">
+        <div class="col-md-6 mb-3 mb-md-0">
+          <p class="mb-0 text-muted">&copy; 2026 Beth Shalom Synagogue. All rights reserved.</p>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <p class="mb-0 text-muted">Powered By <span class="text-danger">&hearts;</span> VINSEVA</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button type="button" class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
