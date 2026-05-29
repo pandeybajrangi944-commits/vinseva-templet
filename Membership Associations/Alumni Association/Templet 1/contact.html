@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Contact the Global Alumni Association — Reach out for membership inquiries, event information, or ways to give back to your alma mater.">
+  <title>Contact Us | Global Alumni Association</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg sticky-top navbar-custom">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <i class="fas fa-graduation-cap text-white me-2 fs-3"></i>
+        <span class="fw-bold text-white fs-4">Alumni Association</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto text-center">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+        </ul>
+        <div class="d-flex justify-content-center">
+          <a href="contact.html" class="btn btn-cta">Join Community</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <header class="page-banner">
+    <div class="page-banner-overlay"></div>
+    <div class="container page-banner-content">
+      <h1 class="display-4 fw-bold mb-3">Connect With Us</h1>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb justify-content-center">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Contact</li>
+        </ol>
+      </nav>
+    </div>
+  </header>
+
+  <section class="section-padding">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-5">
+          <div class="section-header mb-4">
+            <span class="subtitle">GET IN TOUCH</span>
+            <h2 class="title reveal">Reach Your Association</h2>
+          </div>
+          <p class="mb-5 reveal" data-reveal-delay="80">Have questions about membership, events, or how to reconnect? Our team is here to help you navigate the association and make the most of your alumni status.</p>
+
+          <div class="d-flex align-items-start mb-4">
+            <div class="icon-circle icon-circle-md bg-accent text-white me-3">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div>
+              <h5 class="mb-1">Alumni Center</h5>
+              <p class="text-muted mb-0">University Campus, Building 10, Chicago, IL 60607</p>
+            </div>
+          </div>
+
+          <div class="d-flex align-items-start mb-4">
+            <div class="icon-circle icon-circle-md bg-accent text-white me-3">
+              <i class="fas fa-phone"></i>
+            </div>
+            <div>
+              <h5 class="mb-1">Office Phone</h5>
+              <p class="text-muted mb-0">+1 (312) 555-0199</p>
+            </div>
+          </div>
+
+          <div class="d-flex align-items-start mb-4">
+            <div class="icon-circle icon-circle-md bg-accent text-white me-3">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div>
+              <h5 class="mb-1">Email Support</h5>
+              <p class="text-muted mb-0">info@alumniassoc.org</p>
+            </div>
+          </div>
+
+          <div class="d-flex align-items-start">
+            <div class="icon-circle icon-circle-md bg-accent text-white me-3">
+              <i class="fas fa-clock"></i>
+            </div>
+            <div>
+              <h5 class="mb-1">Operating Hours</h5>
+              <p class="text-muted mb-0">Mon - Fri: 9:00 AM - 5:00 PM<br>Sat: Closed</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-7">
+          <div class="custom-card p-4 p-lg-5 shadow-lg h-auto border-0 bg-light">
+            <h3 class="mb-4">Send a Message</h3>
+            <form id="contact-form" action="#" method="post" data-validate="contact" novalidate>
+              <div class="row g-4">
+                <div class="col-md-6">
+                  <label for="name" class="form-label">Full Name</label>
+                  <input type="text" class="form-control" name="name" id="name" placeholder="John Doe" required>
+                  <div class="invalid-feedback">Please enter your name.</div>
+                </div>
+                <div class="col-md-6">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" class="form-control" name="email" id="email" placeholder="john@example.com" required>
+                  <div class="invalid-feedback">Please enter a valid email.</div>
+                </div>
+                <div class="col-md-6">
+                  <label for="phone" class="form-label">Phone</label>
+                  <input type="tel" class="form-control" name="phone" id="phone" placeholder="+1 (___) ___-____"
+                    required>
+                  <div class="invalid-feedback">Please enter your phone number.</div>
+                </div>
+                <div class="col-md-6">
+                  <label for="subject" class="form-label">Graduation Year</label>
+                  <input type="text" class="form-control" name="subject" id="subject"
+                    placeholder="e.g. 2015" required>
+                  <div class="invalid-feedback">Please enter your graduation year.</div>
+                </div>
+                <div class="col-md-6">
+                  <label for="inquiryType" class="form-label">Inquiry Type</label>
+                  <select class="form-select" name="inquiryType" id="inquiryType" required>
+                    <option value="" selected disabled>Select type</option>
+                    <option>Membership Inquiry</option>
+                    <option>Event Registration</option>
+                    <option>Donations & Giving</option>
+                    <option>Volunteer Opportunities</option>
+                    <option>Other</option>
+                  </select>
+                  <div class="invalid-feedback">Please choose an inquiry type.</div>
+                </div>
+                <div class="col-12">
+                  <label for="message" class="form-label">Your Message</label>
+                  <textarea class="form-control" name="message" id="message" rows="5"
+                    placeholder="How can we help you today?" required></textarea>
+                  <div class="invalid-feedback">Please add a message.</div>
+                </div>
+                <div class="col-12 text-end mt-4">
+                  <button type="submit" class="btn btn-cta btn-lg px-5">Submit Message</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-padding py-0">
+    <div class="container-fluid px-0">
+      <iframe class="map-embed" src="https://www.google.com/maps?q=Chicago%2C%20IL&output=embed" width="100%" height="450"
+        allowfullscreen="" loading="lazy" title="Map"></iframe>
+    </div>
+  </section>
+
+  <section class="section-padding text-center" style="background: var(--primary); color: #ffffff;">
+    <div class="container">
+      <h2 class="display-4 fw-bold mb-4">Be Part of Our Global Legacy</h2>
+      <a href="contact.html" class="btn btn-hero">Join Association <i class="fas fa-arrow-right ms-2"></i></a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row g-4 mb-5">
+        <div class="col-lg-4">
+          <h4 class="fw-bold mb-4">Alumni Association</h4>
+          <p class="text-white-50 small">Connecting graduates across generations. Our mission is to foster a lifelong relationship between alumni and the institution.</p>
+          <div class="social-links mt-4">
+            <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-6">
+          <h6 class="fw-bold mb-4">Community</h6>
+          <ul class="list-unstyled small opacity-75">
+            <li class="mb-2"><a href="index.html" class="text-white">Home</a></li>
+            <li class="mb-2"><a href="about.html" class="text-white">About Us</a></li>
+            <li class="mb-2"><a href="events.html" class="text-white">Events</a></li>
+            <li class="mb-2"><a href="gallery.html" class="text-white">Gallery</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-6">
+          <h6 class="fw-bold mb-4">Resources</h6>
+          <ul class="list-unstyled small opacity-75">
+            <li class="mb-2"><a href="#" class="text-white">Career Center</a></li>
+            <li class="mb-2"><a href="#" class="text-white">Mentorship</a></li>
+            <li class="mb-2"><a href="#" class="text-white">Giving Back</a></li>
+            <li class="mb-2"><a href="#" class="text-white">Benefits</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4">
+          <h6 class="fw-bold mb-4">Alumni Newsletter</h6>
+          <div class="input-group mb-3">
+            <input type="text" class="form-control bg-dark border-0 text-white" placeholder="Email address">
+            <button class="btn btn-accent text-white px-4" type="button">Subscribe</button>
+          </div>
+        </div>
+      </div>
+      <hr class="opacity-10">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <p class="small mb-0">© 2026 Alumni Association. All Rights Reserved | Powered By ♥ VINSEVA</p>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <p class="small mb-0">Fostering Lifelong Connections</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button type="button" class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
